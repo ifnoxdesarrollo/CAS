@@ -1,0 +1,23 @@
+#titulo-principal {
+  font-size: 3.5rem;
+  margin-top: 19rem;
+  margin-inline: 1rem;
+  line-height: 3.5rem;
+}
+
+#titulo-secundario {
+  font-size: 1.4rem;
+  margin-inline: 1rem;
+}
+
+.org{
+  font-size: 1.4rem;
+  margin-inline: 1rem;
+  margin-top: 1rem;
+}
+
+.boton-hero{
+  height: 3.5rem;
+  background-color: #3C3C3C !important;
+  color: white !important;
+}
