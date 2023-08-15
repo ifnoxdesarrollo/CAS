@@ -1,0 +1,15 @@
+.titulo-faq{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.divider {
+  width: 5rem;
+  height: 2px;
+  background-color: #CFCFCF; /* Color de la línea */
+  margin: 1rem auto; /* Espacio arriba y abajo de la línea */
+}
+
+.contenedor-faqs{
+  margin-inline: 1.5rem;
+}

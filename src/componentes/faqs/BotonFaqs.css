@@ -1,0 +1,26 @@
+.show-button{
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.hide-button {
+  overflow: hidden;
+  height: 3rem;
+  transition: height 0.3s ease;
+}
+
+.pregunta{
+  font-size: 1.1rem;
+}
+
+.respuesta{
+  font-size: 1rem;
+}
+
+.arrow-icon{
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold !important;
+  text-align: start;
+}
