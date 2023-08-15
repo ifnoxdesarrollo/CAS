@@ -1,4 +1,6 @@
 import './App.css'
+import VyC from './componentes/Voluntariado y Capacitacion/VyC'
+import Donaciones from './componentes/donaciones/Donaciones'
 import Faqs from './componentes/faqs/Faqs'
 import Hero from './componentes/hero/Hero'
 import Navbar from './componentes/navbar/Navbar'
@@ -12,6 +14,8 @@ function App() {
       <Hero></Hero>
       <Prevencion></Prevencion>
       <Faqs></Faqs>
+      <Donaciones></Donaciones>
+      <VyC></VyC>
     </>
   )
 }

@@ -9,6 +9,15 @@
   color: white !important;
 }
 
+.boton-blanco{
+  width: 19rem;
+  height: 3.5rem;
+  border: 2px solid !important;
+  background-color: #FFFFFF !important;
+  border-color: #3E3E3E !important;
+  color: black !important;
+}
+
 .titulo-h2 {
   font-size: 2rem;
   font-weight: bold;
