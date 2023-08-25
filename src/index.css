@@ -1,5 +1,13 @@
+:root {
+  --tipografia-ppal: 'Noto Sans' , sans-serif;
+  
+  /*Colores definidos*/
+  --color-amarillo: rgba(247,157,1,1);
+}
+
 *{
   box-sizing: border-box;
+  font-family: var(--tipografia-ppal);
 }
 
 .boton{
