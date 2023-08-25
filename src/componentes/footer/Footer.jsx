@@ -3,7 +3,7 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <div className='text-center'>
+    <div className='text-center footer'>
       <div className="d-flex container my-5">
         <h4 className='footer-texto ms-2'>Políticas de privacidad</h4>
         <h4 className='footer-texto ms-3'>Términos del Servicio</h4>

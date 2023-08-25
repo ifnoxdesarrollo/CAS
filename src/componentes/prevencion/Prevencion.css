@@ -3,16 +3,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 1727px;
+  height: 1717px;
+  width: 375px;
+  background-color: #F79D01;
 }
 
 .prevencion-img {
   width: 302px;
   height: 236px;
-  margin: 19px;
+  margin: 20px 19px;
 }
 
-.titulo-imagen{
+.titulo-imagen {
   font-size: 1.8rem;
   margin-inline: 1.5rem;
   margin: 0px 0px 15px 0px;
@@ -20,9 +22,9 @@
   height: 33px;
 }
 
-.parrafo-imagen{
+.parrafo-imagen {
   font-size: 1.1rem;
-  margin-inline:1.5rem;
+  margin-inline: 1.5rem;
   line-height: 26px;
   margin: 0px 19px 24px;
 }
@@ -34,11 +36,18 @@
   display: flex;
   justify-self: center;
   align-items: center;
-  margin: 20px 18px 20px; 
-  margin-bottom: 1rem;
+  margin: 20px 18px 0px;
 }
 
 .boton {
   margin: 0px 20px 31px;
+  border-radius: 10px;
+  width: 300px;
+  height: 48px;
+}
 
+.titulo-h2 {
+  margin: 40px 70px 0px 70px;
+  height: 85px;
+  width: 234px;
 }

@@ -1,14 +1,31 @@
-.contacto-titulo{
-  font-size: 3rem;
-  font-weight: bold;
+.contacto {
+  height: 382px;
+  background-color: #711B52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.icono{
+.contacto-titulo {
+  font-size: 33px;
+  font-weight: bold;
+  margin-top: 78px;
+  margin: 0px 156px 22px 157px;
+  color: #F79D01;
+}
+
+.icono {
   font-size: 2rem;
   margin-inline: 0.8rem;
+  color: #F79D01;
 }
 
-.iconos{
+.iconos {
   margin-top: 2.5rem;
   margin-bottom: 8rem;
+}
+
+.parrafo-contacto {
+  color: #fff;
 }

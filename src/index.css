@@ -10,12 +10,14 @@
 }
 
 .boton-blanco{
-  width: 19rem;
-  height: 3.5rem;
+  font-size: 16px !important;
   border: 2px solid !important;
   background-color: #FFFFFF !important;
-  border-color: #3E3E3E !important;
-  color: black !important;
+  border-color: #F79D01 !important;
+  color: #F79D01 !important;
+  width: 300px !important;
+  height: 48px !important;
+  margin: 0px 37px 28px 38px !important; 
 }
 
 .titulo-h2 {
