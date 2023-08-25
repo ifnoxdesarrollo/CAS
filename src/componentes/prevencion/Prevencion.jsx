@@ -3,7 +3,7 @@ import PrevencionItem from './PrevencionItem'
 
 function Prevencion() {
   return (
-    <div className='mt-5 container text-center'>
+    <div className='mt-5 container text-center prevencion'>
       <h2 className='titulo-h2'>
         Prevencion del suicidio
       </h2>

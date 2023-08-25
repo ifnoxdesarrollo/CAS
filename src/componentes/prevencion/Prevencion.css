@@ -1,20 +1,44 @@
-
+.prevencion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 1727px;
+}
 
 .prevencion-img {
   width: 302px;
   height: 236px;
+  margin: 19px;
 }
 
 .titulo-imagen{
   font-size: 1.8rem;
   margin-inline: 1.5rem;
-  margin-top: 1.1rem;
-  margin-bottom: 1rem;
+  margin: 0px 0px 15px 0px;
+  width: 76px;
+  height: 33px;
 }
 
 .parrafo-imagen{
   font-size: 1.1rem;
   margin-inline:1.5rem;
   line-height: 26px;
-  margin-bottom: 1.5rem;
+  margin: 0px 19px 24px;
+}
+
+.card {
+  border-radius: 10px;
+  width: 340px;
+  height: 500px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin: 20px 18px 20px; 
+  margin-bottom: 1rem;
+}
+
+.boton {
+  margin: 0px 20px 31px;
+
 }
