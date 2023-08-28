@@ -1,7 +1,14 @@
 .footer {
-  background-color: #711B52;
+  background-color: #3C3C3C;
+  height: 148px;
 }
 
 .footer-texto{
   font-size: 1rem;
+  color: #fff;
+}
+
+.footer-contenedor {
+  margin-top: 32px;
+
 }
