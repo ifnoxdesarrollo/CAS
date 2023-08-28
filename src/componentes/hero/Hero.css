@@ -14,7 +14,6 @@
 #titulo-principal {
   color: var(--color-amarillo);
   font-size: 2.8rem;
-  margin-top: 14rem;
   margin-inline: 1.5rem;
   line-height: 48px;
   font-weight: bold;
@@ -27,14 +26,24 @@
   margin-bottom: 5rem;
 }
 
-.contenedor{
-  margin-inline:0.6rem;
+.contenedor {
+  width: 375px;
+  height: 812px;
+  background-image: url('./img/hero.png');
+  background-size: cover;
+  margin-top: -2rem;
 }
 
-.hero-text{
+.contenedor-elementos {
+  margin: 38px 37px 15px 36px;
+}
+
+.hero-text {
   font-size: 1.1rem;
+  margin: 38px 59px 41px;
+  
 }
 
-.org{
+.org {
   text-align: center;
 }

@@ -1,6 +1,29 @@
-.parrafo{
-  margin-inline: 1.5rem;
-  line-height: 2rem;
-  font-size: 1.3rem;
-  text-align: start;
+.vyc {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  flex-direction: column;
+  background-image: url('./img/voluntariado.png');
+  background-size: cover;
 }
+
+.parrafo {
+  margin-inline: 1.5rem;
+  line-height: 22px;
+  font-size: 1rem;
+  text-align: start;
+  width: 302px;
+  height: 96px;
+  margin: 0px 36px 32px 37px;
+  padding: 0;
+}
+
+.titulo-vyc {
+  margin: 0px 83px 0px;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  color: #A3185B;
+}
+

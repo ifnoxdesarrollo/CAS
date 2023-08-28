@@ -1,14 +1,40 @@
-.contacto-titulo{
-  font-size: 3rem;
+.contacto {
+  height: 382px;
+  background-color: #711B52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contenedor {
+  margin-top: 78px;
+  height: 304px;
+}
+
+.contacto-titulo {
+  font-size: 33px;
   font-weight: bold;
+  margin-top: 78px;
+  margin: 0px 156px 22px 157px;
+  color: #F79D01;
 }
 
-.icono{
-  font-size: 2rem;
+.icono {
+  font-size: 1.5rem;
   margin-inline: 0.8rem;
+  color: #F79D01;
 }
 
-.iconos{
+.iconos {
   margin-top: 2.5rem;
   margin-bottom: 8rem;
+}
+
+.parrafo-contacto {
+  color: #fff;
+  width: 302px;
+  height: 94px;
+  margin: 22px 36px 36.5px 37px;
+  font-size: 16px;
 }
