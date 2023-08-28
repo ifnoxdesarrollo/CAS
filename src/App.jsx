@@ -16,7 +16,7 @@ function App() {
       <Hero></Hero>
       <Prevencion></Prevencion>
       <Faqs></Faqs>
-      <Donaciones></Donaciones>
+      {/* <Donaciones></Donaciones> */}
       <VyC></VyC>
       <Contacto></Contacto>
       <Footer></Footer>

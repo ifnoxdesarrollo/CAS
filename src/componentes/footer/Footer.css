@@ -1,14 +1,32 @@
 .footer {
   background-color: #3C3C3C;
   height: 148px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.footer-texto{
-  font-size: 1rem;
-  color: #fff;
-}
 
 .footer-contenedor {
   margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 32px 25px 48px 24px;
+}
 
+.footer-texto-1, .footer-texto-2 {
+  font-size: 13px;
+  color: #fff;
+  width: 148px;
+  height: 18px;
+}
+
+.footer-texto-3 {
+  font-size: 13px;
+  color: #fff;
+  width: 304px;
+  height: 18px;
 }

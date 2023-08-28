@@ -10,6 +10,7 @@
 .contenedor {
   margin-top: 78px;
   height: 304px;
+  margin-top: 8rem !important;
 }
 
 .contacto-titulo {
