@@ -14,10 +14,11 @@
 }
 
 .prevencion-img {
-  width: 302px;
-  height: 236px;
+  width: 100%;
+  height: auto;
   /* margin: 20px 19px; */
   margin-bottom: 1rem;
+  
 }
 
 .titulo-imagen {
@@ -28,11 +29,6 @@
 
 .parrafo-imagen {
   color: var(--color-gris-claro);
-}
-
-.boton{
-  background-color: var(--color-rojo) !important;
-  color: white !important;
 }
 
 

@@ -11,8 +11,6 @@ function Prevencion() {
           </div>
           <div className='caja-items'>
               <PrevencionItem className='caja-item'></PrevencionItem>
-              <PrevencionItem className='caja-item'></PrevencionItem>
-              <PrevencionItem className='caja-item'></PrevencionItem>
           </div>
       </div>
     </div>

@@ -15,9 +15,20 @@
   font-family: var(--tipografia-ppal);
 }
 
+
+.titulo-h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  /* margin-inline: 1rem; */
+}
+
 .boton{
   width: 19rem;
   height: 3.5rem;
+  
+}
+
+.boton--gris--oscuro {
   background-color: #3C3C3C !important;
   color: white !important;
 }
@@ -33,8 +44,10 @@
   margin: 0px 37px 28px 38px !important; 
 }
 
-.titulo-h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  /* margin-inline: 1rem; */
+.boton--rojo {
+  background-color: var(--color-rojo) !important;
+  color: white !important;
 }
+
+
+  
