@@ -3,22 +3,23 @@ import './Hero.css'
 
 function Hero() {
   return (
-    <div className="contenedor">
-      <div className="contenedor-elementos">
-        <h3 className='org hero-text'>Organizacion sin Fines de Lucro</h3>
-        <h1 id="titulo-principal">Centro de Asistencia al Suicida</h1>
-        <h3 id="titulo-secundario">y Atención en Crisis</h3>
-        <div className="d-flex flex-column">
-          <div className="botones">
-            <h3 className='hero-text'>Atención únicamente Telefónica</h3>
-            <a className='my-2 btn btn-lg boton' href='#'>
-              Llamar 0800
-            </a>
-            <a className='mb-2 mt-1 btn btn-lg boton' href='#'>
-              Llamar por Whatsapp
-            </a>
-            <h4 className='hero-text'>Llamadas con costo</h4>
-          </div>
+
+    <div className="hero">
+      <div className="hero__contenedor">
+        <div className="hero__contenedor__encabezado">
+          <h3 className='hero__contenedor__encabezado__titulo-1'>Organizacion sin Fines de Lucro</h3>
+          <h1 className='hero__contenedor__encabezado__titulo-2'>Centro de Asistencia al Suicida</h1>
+          <h3 className='hero__contenedor__encabezado__titulo-3'>y Atención en Crisis</h3>
+        </div>
+        <div className="hero__contenedor__botones">
+          <h3 className='hero__contenedor__botones__titulo-1'>Atención únicamente Telefónica</h3>
+          <a href='#'>
+            <button className='btn btn-lg hero__contenedor__botones__boton-1'>Llamar 0800</button>
+          </a>
+          <a href='#'>
+            <button className='btn btn-lg hero__contenedor__botones__boton-2'>Llamar por Whatsapp</button>
+          </a>
+          <h3 className='hero__contenedor__botones__titulo-2'>Llamadas con costo</h3>
         </div>
       </div>
     </div>

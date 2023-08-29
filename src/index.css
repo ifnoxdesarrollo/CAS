@@ -3,10 +3,15 @@
   
   /*Colores definidos*/
   --color-amarillo: rgba(247,157,1,1);
+  --color-rojo: rgba(163, 24, 91, 1);
+  --color-gris-oscuro:rgba(61, 61, 61, 1);
+  --color-gris-claro: rgba(115, 115, 115, 1);
 }
 
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: var(--tipografia-ppal);
 }
 
@@ -29,7 +34,7 @@
 }
 
 .titulo-h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
-  margin-inline: 1rem;
+  /* margin-inline: 1rem; */
 }
