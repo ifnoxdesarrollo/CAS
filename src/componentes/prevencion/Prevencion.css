@@ -5,8 +5,8 @@
   flex-direction: column;
   height: 1717px;
   width: 375px;
-  background-color: #F79D01;
-  height: 114rem;
+  background: linear-gradient(to bottom, #F79D01 0%, #f0f0f0 100%);
+  height: 44rem;
 }
 
 .prevencion-img {

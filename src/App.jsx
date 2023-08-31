@@ -5,7 +5,6 @@ import Donaciones from './componentes/donaciones/Donaciones'
 import Faqs from './componentes/faqs/Faqs'
 import Footer from './componentes/footer/Footer'
 import Hero from './componentes/hero/Hero'
-import Telefonos from './componentes/hero/Telefonos'
 import Navbar from './componentes/navbar/Navbar'
 import Prevencion from './componentes/prevencion/Prevencion'
 
@@ -14,7 +13,7 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Hero telefonos={<Telefonos></Telefonos>}></Hero>
+      <Hero></Hero>
       <Prevencion></Prevencion>
       <Faqs></Faqs>
       {/* <Donaciones></Donaciones> */}

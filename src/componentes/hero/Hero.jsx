@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './Hero.css'
-import Telefonos from './Telefonos';
 
 class Hero extends Component {
 
