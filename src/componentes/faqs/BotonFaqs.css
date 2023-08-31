@@ -1,3 +1,12 @@
+.contenedor-faqs {
+    
+
+
+    background-color: lightcoral;
+    margin-inline: 1.5rem;
+  
+}
+
 .show-button{
   height: 0;
   overflow: hidden;

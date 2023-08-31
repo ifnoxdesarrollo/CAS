@@ -1,7 +1,6 @@
 import './App.css'
 import VyC from './componentes/Voluntariado y Capacitacion/VyC'
 import Contacto from './componentes/contacto/Contacto'
-import Donaciones from './componentes/donaciones/Donaciones'
 import Faqs from './componentes/faqs/Faqs'
 import Footer from './componentes/footer/Footer'
 import Hero from './componentes/hero/Hero'
@@ -16,7 +15,6 @@ function App() {
       <Hero></Hero>
       <Prevencion></Prevencion>
       <Faqs></Faqs>
-      <Donaciones></Donaciones>
       <VyC></VyC>
       <Contacto></Contacto>
       <Footer></Footer>

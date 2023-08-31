@@ -6,6 +6,8 @@
   --color-rojo: rgba(163, 24, 91, 1);
   --color-gris-oscuro:rgba(61, 61, 61, 1);
   --color-gris-claro: rgba(115, 115, 115, 1);
+  --color-turquesa: rgba(143, 204, 208, 1);
+  --color-blanco: rgba(255, 255, 255, 1);
 }
 
 *{

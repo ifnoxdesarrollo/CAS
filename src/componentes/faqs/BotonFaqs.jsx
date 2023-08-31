@@ -21,11 +21,11 @@ function BotonFaqs() {
         className="btn boton d-flex text-center"
         onClick={onOpenButton}
       >
-        <div className="pregunta mx-auto">Lorem ipsum dolor sit amet consectetur.</div>
+        <div className="pregunta mx-auto">Pregunta??? </div>
         <i className={iconClass + " arrow-icon"}></i>
       </div>
       <div className={"mb-4 " + showButton}>
-        <div className="respuesta">Lorem ipsum dolor sit amet consectetur.</div>
+        <div className="respuesta">Respuesta: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex quaerat nulla deserunt nihil itaque iure quae, id, nemo culpa aliquid magnam facilis fugiat fuga fugit ducimus voluptas at impedit illum?</div>
       </div>
     </div>
   )
