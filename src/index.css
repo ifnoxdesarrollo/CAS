@@ -8,6 +8,8 @@
   --color-gris-claro: rgba(115, 115, 115, 1);
   --color-turquesa: rgba(143, 204, 208, 1);
   --color-blanco: rgba(255, 255, 255, 1);
+  font-size: 16px;
+
 }
 
 *{
@@ -25,8 +27,8 @@
 }
 
 .boton{
-  width: 19rem;
-  height: 3.5rem;
+  width: 24.25rem;
+  height: 3rem;
   
 }
 
