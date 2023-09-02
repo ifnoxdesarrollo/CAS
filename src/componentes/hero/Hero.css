@@ -1,63 +1,66 @@
-.caja-ppal {
+.hero { 
   width: 100%;
   height: 90vh;
-
-  background-color: lightcoral;
+  background-image: url('../../../public/imagenes/llamada-al-CAS.png');
+  background-size: cover;
+  /* background-color: lightcoral; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.caja-contenido {
+.hero__contenedor {
   width: 80%;
-  margin: 0 auto;
-  background-color: lightseagreen;
+  height: 100%;
 }
 
-#titulo-principal {
-  color: var(--color-amarillo);
-  font-size: 2.8rem;
-  margin-inline: 1.5rem;
-  line-height: 48px;
-  font-weight: bold;
+.hero__contenedor__encabezado {
+  width: 100%;
+  height: 100% !important;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
-#titulo-secundario {
-  margin-top: 0.7rem;
-  font-size: 1.1rem;
-  margin-inline: 1.5rem;
-  margin-bottom: 5rem;
+.hero__contenedor__encabezado__titulo-1 {
+  color: var(--color-amarillo)!important;
+  font-size: 5rem;
+  text-align: start;
+  font-weight: 800;
+  
+}
+.hero__contenedor__encabezado__titulo-2 {
+  width: 257px;
+  height: 31px;
+  font-size: 16px;
+  color: #E1E1E1;
+  margin: -10px 82px 241px 36px;
 }
 
-.contenedor {
+
+
+.hero__contenedor__botones__titulo-3 {
+  font-size: 16px;
+  color: #E1E1E1;
+  width: 257px;
+  height: 25px;
+  margin: 0px 75px 12px 43px;
+}
+
+
+
+
+
+
+
+/* .hero {
   width: 375px;
   height: 812px;
-  margin-top: -2rem;
-}
-
-.contenedor-elementos {
-  width: 375px;
-  height: 812px;
-  margin: 38px 37px 15px;
   background-image: url('./img/hero.png');
   background-size: cover;
-  position: absolute;
-}
-
-.hero-text {
-  font-size: 1.1rem;
-  margin: 38px 59px 41px;
-  position: relative;
-
-}
-
-.org {
-  text-align: center;
-}
-
-.hero {
-  width: 375px;
-  height: 812px;
-  background-image: url('./img/hero.png');
-  background-size: cover;
-}
+} */
 
 .hero__contenedor {
   margin-top: -2.5rem;
@@ -77,31 +80,6 @@
   margin: 120px 59px 41px;
   width: 257px;
   height: 31px;
-}
-
-.hero__contenedor__encabezado__titulo-2 {
-  color: #F79D01;
-  font-size: 40px;
-  text-align: start;
-  width: 302px;
-  height: 165px;
-  margin: 0px 37px 0px 36px;
-}
-
-.hero__contenedor__encabezado__titulo-3 {
-  width: 257px;
-  height: 31px;
-  font-size: 16px;
-  color: #E1E1E1;
-  margin: -10px 82px 241px 36px;
-}
-
-.hero__contenedor__botones__titulo-1 {
-  font-size: 16px;
-  color: #E1E1E1;
-  width: 257px;
-  height: 25px;
-  margin: 0px 75px 12px 43px;
 }
 
 .hero__contenedor__botones__boton-1 {
