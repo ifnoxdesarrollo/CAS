@@ -8,6 +8,8 @@
   --color-gris-claro: rgba(115, 115, 115, 1);
   --color-turquesa: rgba(143, 204, 208, 1);
   --color-blanco: rgba(255, 255, 255, 1);
+  --color-verde: #1B8B17;
+  --color-verde-hover: #005706;
   font-size: 16px;
 
 }
@@ -29,6 +31,7 @@
 .boton{
   width: 24.25rem;
   height: 3rem;
+  box-shadow: none !important;
   
 }
 
@@ -51,6 +54,10 @@
 .boton--rojo {
   background-color: var(--color-rojo) !important;
   color: white !important;
+}
+
+.boton--verde {
+  background-color: var(--color-verde);
 }
 
 
