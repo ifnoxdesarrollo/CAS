@@ -9,7 +9,7 @@ function Hero() {
         <div className="hero__contenedor__encabezado">
           <h1 className='hero__contenedor__encabezado__titulo-1'>Centro de <br />Asistencia al <br />Suicida</h1>
           <h3 className='hero__contenedor__encabezado__titulo-2'>y Atención en Crisis</h3>
-          <h3 className='hero__contenedor__encabezado__titulo-3'>Organizacion sin Fines de Lucro</h3>
+          <h3 className='hero__contenedor__encabezado__titulo-3'>Organización sin Fines de Lucro</h3>
         </div>
 
         <div className="hero__contenedor__botones">
