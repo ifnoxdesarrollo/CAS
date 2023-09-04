@@ -1,5 +1,5 @@
 import './App.css'
-import Header from './componentes/Header/Header'
+import Encabezado from './componentes/Encabezado/Encabezado'
 import VyC from './componentes/Voluntariado y Capacitacion/VyC'
 import Contacto from './componentes/contacto/Contacto'
 import Faqs from './componentes/faqs/Faqs'
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <Header></Header>
+      <Encabezado></Encabezado>
       <Hero></Hero>
       <Prevencion></Prevencion>
       <Faqs></Faqs>
