@@ -1,22 +1,27 @@
 .contacto {
-  height: 382px;
-  background-color: #711B52;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  height: 39vh;
+  background-color: var(--color-rojo);
+  
 }
 
 .contenedor {
-  margin-top: 78px;
-  height: 304px;
+  height: 39vh;
+  width: 50%;
+  margin: 0 auto;
+  /* height: 304px; */
+  /* background-color: lightblue; */
+
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
 }
 
 .contacto-titulo {
   font-size: 33px;
   font-weight: bold;
-  margin-top: 78px;
-  margin: 0px 156px 22px 157px;
+  /* margin-top: 78px; */
+  /* margin: 0px 156px 22px 157px; */
   color: #F79D01;
 }
 
@@ -27,14 +32,11 @@
 }
 
 .iconos {
-  margin-top: 2.5rem;
-  margin-bottom: 8rem;
+  margin-top: 3rem;
 }
 
 .parrafo-contacto {
-  color: #fff;
-  width: 302px;
-  height: 94px;
-  margin: 22px 36px 36.5px 37px;
-  font-size: 16px;
+  color: rgba(225,225,225,1);
+  font-size: 1rem;
+  margin-top: 3rem;
 }
