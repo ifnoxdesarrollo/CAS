@@ -1,22 +1,28 @@
 .vyc {
+  width: 100%;
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center ;
   flex-direction: column;
-  background-image: url('./img/voluntariado.png');
+  background-image: url('../../../imagenes/sala-de-escucha-llamados.png');
   background-size: cover;
 }
 
 .parrafo {
+  color: var(--color-gris-oscuro);
+  font-weight: 500;
+
   margin-inline: 1.5rem;
   line-height: 22px;
-  font-size: 1rem;
+  font-size: 1.125rem;
   text-align: start;
-  width: 302px;
+  width: 50%;
   height: 96px;
-  margin: 0px 36px 32px 37px;
+  /* margin: 0px 36px 32px 37px; */
   padding: 0;
+
+
 }
 
 .titulo-vyc {

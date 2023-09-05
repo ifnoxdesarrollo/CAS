@@ -3,9 +3,9 @@ import ItemVyC from './ItemVyC'
 
 function VyC() {
   return (
-    <div className='container text-center vyc'>
-      <ItemVyC titulo={"Voluntariado"} parrafo={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} textoBoton={"Quiero Ayudar"}></ItemVyC>
-      <ItemVyC titulo={"Capacitación"} parrafo={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} textoBoton={"Leer más"}></ItemVyC>
+    <div className='vyc'>
+      <ItemVyC titulo={"Voluntariado"} parrafo={"Anualmente el Centro de Atención al Suicida y atención en crisis realiza su convocatoria a aspirantes a voluntarios para la atención telefónica"} textoBoton={"Quiero Ayudar"}></ItemVyC>
+      <ItemVyC titulo={"Capacitación"} parrafo={"Es teórico-práctico, profundizando sobre el vínculo entre consultante y voluntario operador, hecho que constituye la base de nuestra actividad."} textoBoton={"Leer más"}></ItemVyC>
     </div>
   )
 }

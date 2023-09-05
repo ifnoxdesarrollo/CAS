@@ -1,10 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Encabezado.css'
 
 function Encabezado() {
+
+  const [colorNav, setColorNav] = useState (false);
+  const changeColorNav = () => {
+    if (window.scrollY >= 800) {
+      setColorNav (true)
+    } else {
+      setColorNav (false)
+    }
+  }
+
+  window.addEventListener('scroll', changeColorNav)
+
   return (
     <>
-      <header className="header-seccion">
+      <header className={colorNav ? 'header-seccion header-seccion-scroll' : 'header-seccion'}>
           <nav className='navbar-seccion'>
                 <div className='navbar-seccion-menu'>
                     <li className='navbar-secciones-item'><a href=""></a>Historia del CAS</li>

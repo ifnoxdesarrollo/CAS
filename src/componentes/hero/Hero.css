@@ -1,6 +1,6 @@
 .hero { 
   width: 100%;
-  height: 92vh;
+  height: 100vh;
   background-image: url('../../../imagenes/llamada-al-CAS.png');
   background-size: cover;
   /* background-color: lightcoral; */
@@ -10,8 +10,10 @@
 }
 
 .hero__contenedor {
-  width: 70%;
+  width: 60%;
   height: 100%;
+
+  /* background-color: lightyellow; */
 }
 
 .hero__contenedor__encabezado {
@@ -33,59 +35,79 @@
   
 }
 .hero__contenedor__encabezado__titulo-2 {
-  font-size: 1.75rem;
-  color: var(--color-blanco)!important;
+  font-size: 3rem;
+  color: var(--color-amarillo)!important;
   margin-bottom: 2.5rem;
+  font-weight: 600;
 }
 .hero__contenedor__encabezado__titulo-3 {
   font-size: 1.375rem;
   color: var(--color-blanco)!important;
+  margin-top: 1.25rem;
 }
 
 .hero__contenedor__botones {
-
+  margin-top: 4rem;
 
   /* background-color: lightgoldenrodyellow; */
+}
+
+.contenedor__botones {
+  display: flex;
+  justify-content: space-between;
+
+  /* background-color: azure; */
 }
 
 .hero__contenedor__botones__titulo-1 {
   font-size: 1.375;
   color: var(--color-blanco);
-
+  margin-bottom: 1.5rem;
 }
 
-.hero__contenedor__botones__titulo-3 {
+/* .hero__contenedor__botones__titulo-3 {
   font-size: 16px;
   color: #E1E1E1;
   width: 257px;
   height: 25px;
   margin: 0px 75px 12px 43px;
-}
+} */
 
 .hero__contenedor__botones__boton-1 {
-  width: 300px !important;
+  width: 400px !important;
   height: 48px !important;
   border-radius: 10px !important;
-  margin: 0px 37px 12px 38px !important;
-  background-color: #005706 !important;
-  font-size: 16px !important;
+  /* margin: 0px 37px 12px 38px !important; */
+  background-color: var(--color-verde-oscuro) !important;
+  font-size: 1.2rem !important;
   color: #FCFCFC !important; 
+  border: none !important;
+}
+
+button.hero__contenedor__botones__boton-1:hover {
+  background-color: var(--color-verde-oscuro-h)!important;
 }
 
 .hero__contenedor__botones__boton-2 {
-  width: 300px !important;
+  width: 400px !important;
   height: 48px !important;
   border-radius: 10px !important;
-  margin: 0px 37px 5px 38px !important;
-  
-  font-size: 16px !important;
+  /* margin: 0px 37px 5px 38px !important; */
+  background-color: var(--color-verde-claro)!important;
+  font-size: 1.2rem !important;
   color: #FCFCFC !important;
+  border: none !important;
 }
+
+button.hero__contenedor__botones__boton-2:hover {
+  background-color: var(--color-verde-claro-h)!important;
+}
+
 
 .hero__contenedor__botones__titulo-2 {
   font-size: 16px;
   color: #E1E1E1;
   width: 143px;
   height: 25px;
-  margin: 0px 192px 15px 43px;
+  margin-top: 1.5rem;
 }

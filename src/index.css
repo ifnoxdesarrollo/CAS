@@ -4,12 +4,15 @@
   /*Colores definidos*/
   --color-amarillo: rgba(247,157,1,1);
   --color-rojo: rgba(163, 24, 91, 1);
+  --color-rojo-transp: rgba(163, 24, 91, 0.8);
   --color-gris-oscuro:rgba(61, 61, 61, 1);
   --color-gris-claro: rgba(115, 115, 115, 1);
   --color-turquesa: rgba(143, 204, 208, 1);
   --color-blanco: rgba(255, 255, 255, 1);
-  --color-verde: #1B8B17;
-  --color-verde-hover: #005706;
+  --color-verde-claro: #1B8B17;
+  --color-verde-claro-h: #20A71B;
+  --color-verde-oscuro: #005706;
+  --color-verde-oscuro-h: #007208;
   font-size: 16px;
 
 }
