@@ -111,9 +111,10 @@ button.hero__contenedor__botones__boton-2:hover {
   margin-top: 1.5rem;
 }
 
-@media (max-width:405px){
+@media (max-width:415px){
   .hero { 
-    background-image: url('../../../imagenes/HeroMobile.jpg');
+    background-image: url('../../../imagenes/hero_mobile.jpg');
+    height: 50.75rem;
   }
   .hero__contenedor__encabezado {
     width: 100%;
@@ -157,10 +158,10 @@ button.hero__contenedor__botones__boton-2:hover {
     margin-top: 0rem;
   }
   .hero__contenedor__botones__boton-1 {
-    width: 300px !important;
-    height: 48px !important;
+    width: 18.75rem !important;
+    height: 3rem !important;
     border-radius: 10px !important;
-    /* margin: 0px 37px 12px 38px !important; */
+    margin: 0px 0px 12px 0px !important;
     background-color: var(--color-verde-oscuro) !important;
     font-size: 1rem !important;
     color: #FCFCFC !important; 
@@ -168,10 +169,9 @@ button.hero__contenedor__botones__boton-2:hover {
   }
   
   .hero__contenedor__botones__boton-2 {
-    width: 300px !important;
-    height: 48px !important;
+    width: 18.75rem !important;
+    height: 3rem !important;
     border-radius: 10px !important;
-    /* margin: 0px 37px 5px 38px !important; */
     background-color: var(--color-verde-claro)!important;
     font-size: 1rem !important;
     color: #FCFCFC !important;
@@ -182,19 +182,14 @@ button.hero__contenedor__botones__boton-2:hover {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    /* background-color: azure; */
   }
 
   .hero__contenedor__botones {
     margin-top: 0rem;
-  
-    /* background-color: lightgoldenrodyellow; */
   }
 
   .hero__contenedor {
-    width: 80%;
+    width: 18.75rem;
     height: 100%;
-  
-    /* background-color: lightyellow; */
   }
 }
