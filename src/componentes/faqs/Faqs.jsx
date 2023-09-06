@@ -1,19 +1,12 @@
 import React from 'react'
-import BotonFaqs from './BotonFaqs'
 import './Faqs.css'
 
 function Faqs() {
   return (
     <div className='text-center caja-seccion'>
       <div className='caja-elementos'>
-        <h2 className='mt-5 titulo-h2'>Preguntas Frecuentes</h2>
+        <h2 className='titulo-h2-faqs'>Preguntas Frecuentes</h2>
         <div className="divider"></div>
-        {/* <BotonFaqs></BotonFaqs>
-              <BotonFaqs></BotonFaqs>
-              <BotonFaqs></BotonFaqs>
-              <BotonFaqs></BotonFaqs>
-              <BotonFaqs></BotonFaqs>
-              <BotonFaqs></BotonFaqs> */}
         <div className="accordion accordion-flush" id="accordionExample">
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingOne">
@@ -92,7 +85,7 @@ function Faqs() {
             </div>
           </div>
           <br />
-          <div className="accordion-item">
+          <div className="accordion-item pb-5 pb-sm-0">
             <h2 className="accordion-header" id="headingSix">
               <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                 ¿Cuáles son los teléfonos habilitados?

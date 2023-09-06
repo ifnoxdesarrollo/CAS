@@ -12,7 +12,6 @@
 .parrafo {
   color: var(--color-gris-oscuro);
   font-weight: 500;
-
   margin-inline: 1.5rem;
   line-height: 22px;
   font-size: 1.125rem;
@@ -21,8 +20,6 @@
   height: 96px;
   /* margin: 0px 36px 32px 37px; */
   padding: 0;
-
-
 }
 
 .titulo-vyc {
@@ -33,3 +30,36 @@
   color: #A3185B;
 }
 
+@media (width <= 415px){
+  .parrafo {
+    color: var(--color-gris-oscuro);
+    font-weight: 500;
+    margin-inline: 1.5rem;
+    line-height: 22px;
+    font-size: 1rem;
+    text-align: start;
+    width: 18.875rem;
+    height: 100%;
+    /* margin: 0px 36px 32px 37px; */
+    padding: 0;
+  }
+  
+.titulo-vyc {
+  margin: 0px 83px 0px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: #A3185B;
+}
+
+.vyc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  flex-direction: column;
+  background-image: url('../../../imagenes/vyc_mobile.jpg');
+  background-size: cover;
+}
+}
