@@ -3,17 +3,16 @@
     height: 70vh;
     background: linear-gradient(#F79D01,#FFFFFF);
     background-color: var(--color-amarillo);
-    display: grid;
-    place-items: center;
+    /* display: grid;
+    place-items: center; */
+    
 }
 
 .caja-elementos {
     width: 80%;
-    height: 100%;
     max-width: 1400px;
-    margin-top: 4rem;
-
     /* background-color: aquamarine; */
+    margin: 0 auto;
 }
 
 .caja-items {

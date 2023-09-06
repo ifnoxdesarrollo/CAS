@@ -1,15 +1,23 @@
 .caja-seccion {
   width: 100%;
-  max-width: 1440px;
-  height: 90vh;
+  /* min-width: 50rem!important; */
+  height: 98vh;
 
   background: linear-gradient(var(--color-blanco),var(--color-turquesa));
-  /* background-color: var(--color-turquesa); */
+  background-color: var(--color-turquesa);
 }
 
-.caja-elementos {
+.caja-elementos-faqs {
   width: 80%;
+  max-width: 1440px;
   margin: 0 auto;
+
+  /* background-color: lightgreen; */
+}
+
+.titulo-h2 {
+  /* margin-top: 2rem; */
+  padding-top: 4rem;
 }
 
 .accordion-button {
