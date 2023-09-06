@@ -5,7 +5,7 @@ function Contacto() {
   return (
     <div className='text-center contacto'>
       <div className='contenedor'>
-        <h2 className='contacto-titulo mb-4'>
+        <h2 className='contacto-titulo mb-0 mb-sm-4 mt-5 mt-sm-0'>
           CAS
         </h2>
         <p className='text-center parrafo-contacto'>

@@ -40,3 +40,25 @@
   font-size: 1rem;
   margin-top: 3rem;
 }
+
+@media (width <= 415px){
+  .contacto {
+    height: 100%;
+    background-color: var(--color-rojo); 
+  }
+
+  .contenedor {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+  }
+
+  .iconos {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+}
