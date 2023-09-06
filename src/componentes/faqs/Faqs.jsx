@@ -4,16 +4,10 @@ import './Faqs.css'
 
 function Faqs() {
   return (
-    <div className='text-center caja-seccion'>
-      <div className='caja-elementos'>
-          <h2 className='mt-5 titulo-h2'>Preguntas Frecuentes</h2>
-          <div className="divider"></div>
-              {/* <BotonFaqs></BotonFaqs>
-              <BotonFaqs></BotonFaqs>
-              <BotonFaqs></BotonFaqs>
-              <BotonFaqs></BotonFaqs>
-              <BotonFaqs></BotonFaqs>
-              <BotonFaqs></BotonFaqs> */}
+    <div className='caja-seccion'>
+      <div className='caja-elementos-faqs'>
+          <h2 className='titulo-h2'>Preguntas Frecuentes</h2>
+          
         <div class="accordion accordion-flush" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
