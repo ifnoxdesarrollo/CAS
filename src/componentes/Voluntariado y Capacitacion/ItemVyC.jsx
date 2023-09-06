@@ -6,13 +6,13 @@ import './VyC.css';
 function ItemVyC(props) {
   return (
     <>
-      <h2 className='titulo-vyc mb-4'>
+      <h2 className='titulo-vyc'>
         {props.titulo}
       </h2>
       <h3 className='parrafo'>
         {props.parrafo}
       </h3>
-      <div className="btn boton-blanco fs-4 fw-bold rounded-3">
+      <div className="boton boton-blanco">
         {props.textoBoton}
       </div>
     </>
