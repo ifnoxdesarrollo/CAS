@@ -31,7 +31,7 @@ function Encabezado() {
                 </div>
           </nav>
 
-          <a className="navbar-brand header-logo" href="#">CAS - Mendoza</a>
+          <a className="navbar-brand header-logo" href="#">CAS - Mza</a>
 
       </header>
     
