@@ -1,7 +1,7 @@
 .hero { 
   width: 100%;
   height: 100vh;
-  background-image: url('../../../imagenes/llamada-al-CAS.png');
+  background-image: url('../../../imagenes/celular-llamando-CAS.png');
   background-size: cover;
   /* background-color: lightcoral; */
   display: flex;
