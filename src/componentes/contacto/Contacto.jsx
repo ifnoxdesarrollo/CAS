@@ -5,7 +5,7 @@ function Contacto() {
   return (
     <div className='text-center contacto'>
       <div className='contenedor'>
-        <h2 className='contacto-titulo mb-0 mb-sm-4 mt-5 mt-sm-0'>
+        <h2 className='contacto-titulo'>
           CAS
         </h2>
         <p className='text-center parrafo-contacto'>
@@ -13,10 +13,10 @@ function Contacto() {
         </p>
         <div className="iconos">
           <i className="bi bi-whatsapp icono"></i>
-          <i className="bi bi-facebook icono"></i>
+          <i className="bi bi-instagram icono"></i>
           <i className="bi bi-phone icono"></i>
-          <i className="bi bi-whatsapp icono"></i>
-          <i className="bi bi-whatsapp icono"></i>
+          <i className="bi bi-envelope icono"></i>
+          <i className="bi bi-facebook icono"></i>
         </div>
       </div>
     </div>
