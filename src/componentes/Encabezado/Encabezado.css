@@ -69,3 +69,7 @@
 .header-logo a:hover{
   color: var(--color-blanco)!important;
 }
+
+.header-logo {
+  color: red;
+}
