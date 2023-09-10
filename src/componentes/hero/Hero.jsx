@@ -3,7 +3,6 @@ import './Hero.css'
 
 class Hero extends Component {
 
-<<<<<<< HEAD
   constructor(props) {
     super(props);
     this.state = {
@@ -16,25 +15,6 @@ class Hero extends Component {
       this.setState({ currentTime: new Date() });
     }, 1000);
   }
-=======
-    <div className="hero">
-      <div className="hero__contenedor">
-        <div className="hero__contenedor__encabezado">
-          <h1 className='hero__contenedor__encabezado__titulo-1'>Centro de <br />Asistencia al <br />Suicida</h1>
-          <h3 className='hero__contenedor__encabezado__titulo-2'>y Atención en Crisis</h3>
-          <h3 className='hero__contenedor__encabezado__titulo-3'>Organización sin fines de lucro</h3>
-        </div>
-
-        <div className="hero__contenedor__botones">
-            <h3 className='hero__contenedor__botones__titulo-1'>Atención únicamente telefónica</h3>
-            <div className='contenedor__botones'>
-              <a href='#'>
-                <button className='hero__contenedor__botones__boton-1'>Llamar al 0-800</button>
-              </a>
-              <a href='#'>
-                <button className='boton--verde hero__contenedor__botones__boton-2'>Llamar por Whatsapp</button>
-              </a>
->>>>>>> 924c7f1de51a6b8b6329820339f56cd130df067d
 
   componentWillUnmount() {
     clearInterval(this.interval);
@@ -76,9 +56,11 @@ class Hero extends Component {
       <div className="hero">
         <div className="hero__contenedor">
           <div className="hero__contenedor__encabezado">
-            <h3 className='hero__contenedor__encabezado__titulo-1'>Organizacion sin Fines de Lucro</h3>
-            <h1 className='hero__contenedor__encabezado__titulo-2'>Centro de Asistencia al Suicida</h1>
-            <h3 className='hero__contenedor__encabezado__titulo-3'>y Atención en Crisis</h3>
+            <h1 className='hero__contenedor__encabezado__titulo-1'>Centro de 
+            <br />Asistencia al 
+            <br />Suicida</h1>
+            <h2 className='hero__contenedor__encabezado__titulo-2'>y Atención en Crisis</h2>
+            <h3 className='hero__contenedor__encabezado__titulo-3'>Organizacion sin Fines de Lucro</h3>
           </div>
           <div className="hero__contenedor__botones">
             <h3 className='hero__contenedor__botones__titulo-1'>Atención únicamente Telefónica</h3>

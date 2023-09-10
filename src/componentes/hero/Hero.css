@@ -3,7 +3,6 @@
   height: 100vh;
   background-image: url('../../../imagenes/celular-llamando-CAS.png');
   background-size: cover;
-  /* background-color: lightcoral; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,10 +10,10 @@
 }
 
 .hero__contenedor {
-  width: 60%;
+  width: 80%;
   height: 100%;
 
-  /* background-color: lightyellow; */
+  /* background-color: tomato; */
 }
 
 .hero__contenedor__encabezado {
@@ -22,7 +21,7 @@
   height: 70% !important;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: start;
 
   /* background-color: lightgrey; */
