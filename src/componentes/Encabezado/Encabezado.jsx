@@ -44,10 +44,10 @@ function Encabezado() {
 
               {/* elementos del menu colapsable*/}
               <div className="collapse navbar-collapse" id='menu'>
-                 <ul className='navbar-nav'>
-                  <li className='nav-itm'><a href=""></a>Historia del CAS</li>
-                  <li className='nav-itm'><a href=""></a></li>
-                  <li className='nav-itm'><a href=""></a></li>
+                 <ul className='navbar-nav me-auto'>
+                  <li className='nav-item'><a href=""></a>Historia del CAS</li>
+                  <li className='nav-item'><a href="">Preguntas frecuentes</a></li>
+                  <li className='nav-item'><a href="">Voluntariado</a></li>
                  </ul>
 
               </div>
