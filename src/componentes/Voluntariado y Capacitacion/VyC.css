@@ -1,7 +1,7 @@
 .vyc {
   width: 100%;
-  height: 70vh;
-  
+  height: 90vh;
+
   background-image: url('../../../imagenes/sala-de-escucha-llamados.png');
   background-size: cover;
   /* object-fit: cover; */
@@ -9,7 +9,7 @@
   place-items: center;
 }
 
-.vyc-seccion {  
+.vyc-seccion {
   /* background-color: lightcoral; */
 
   display: grid;
@@ -27,16 +27,23 @@
     "vyc_voluntariado"
     "vyc_capacitacion";
   width: 70%;
+  margin-top: -7rem;
 }
 
-.vyc_voluntariado { grid-area: vyc_voluntariado; 
-
+.vyc_voluntariado {
+  grid-area: vyc_voluntariado;
 }
 
-.vyc_capacitacion { grid-area: vyc_capacitacion; 
-
+.vyc_capacitacion {
+  grid-area: vyc_capacitacion;
+  height: 200px !important;
 }
 
+.vyc_boton {
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+}
 
 .parrafo {
   color: var(--color-gris-oscuro);
@@ -45,7 +52,7 @@
   line-height: 22px;
   font-size: 1.125rem;
   text-align: start;
-  
+  width: 800px;
   margin: 1rem 0;
   padding: 0;
 }
@@ -58,7 +65,7 @@
   color: var(--color-rojo);
 }
 
-@media (width <= 415px){
+@media (width <=415px) {
   .parrafo {
     color: var(--color-gris-oscuro);
     font-weight: 500;
@@ -71,24 +78,70 @@
     /* margin: 0px 36px 32px 37px; */
     padding: 0;
   }
-  
-.titulo-vyc {
-  margin: 0px 83px 0px;
-  font-size: 2rem;
-  text-align: center;
-  font-weight: bold;
-  color: #A3185B;
+
+  .titulo-vyc {
+    margin: 0px 83px 0px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #A3185B;
+  }
+
+  .vyc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../../../imagenes/vyc_mobile.jpg');
+    background-size: cover;
+  }
+
 }
 
-.vyc {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center ;
-  flex-direction: column;
-  background-image: url('../../../imagenes/vyc_mobile.jpg');
-  background-size: cover;
+@media (width <=600px) {
+
+  .vyc {
+    height: 150vh;
+  }
+
+  .vyc-seccion {
+    margin-top: -12rem;
+  }
+
+  .parrafo {
+    width: 450px;
+  }
+
+  .boton .boton-blanco {
+    width: 14rem !important;
+  }
 }
 
+@media (width <=375px) {
+  .vyc {
+    height: 175vh;
+  }
+
+  .vyc-seccion {
+    margin-top: -16rem;
+  }
+
+  .parrafo {
+    width: 300px;
+  }
+
+  .vyc_boton {
+    margin-top: 3rem;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parrafo-1{ 
+    height: 130px;
+  }
 }
