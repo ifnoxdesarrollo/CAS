@@ -4,6 +4,7 @@
   
   background-image: url('../../../imagenes/sala-de-escucha-llamados.png');
   background-size: cover;
+  /* object-fit: cover; */
   display: grid;
   place-items: center;
 }

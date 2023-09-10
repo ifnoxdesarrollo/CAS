@@ -28,6 +28,7 @@ body.modal-activo {
   height: auto;
   /* margin: 20px 19px; */
   /* margin: 0.5rem; */
+  object-fit: cover;
   
 }
 
