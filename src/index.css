@@ -65,5 +65,10 @@
   background-color: var(--color-verde);
 }
 
+@media (width <=375px) {
 
-  
+  .boton {
+    width: 10rem !important;
+  }
+
+}

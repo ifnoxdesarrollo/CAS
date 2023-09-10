@@ -11,10 +11,10 @@ function App() {
 
   return (
     <>
-      <Encabezado></Encabezado>
-      <Hero></Hero>
-      <Prevencion></Prevencion>
-      <Faqs></Faqs>
+      {/* <Encabezado></Encabezado> */}
+      {/* <Hero></Hero> */}
+      {/* <Prevencion></Prevencion> */}
+      {/* <Faqs></Faqs> */}
       <VyC></VyC>
       <Contacto></Contacto>
       <Footer></Footer>
