@@ -1,5 +1,4 @@
 import React from 'react'
-import BotonFaqs from './BotonFaqs'
 import './Faqs.css'
 
 function Faqs() {
@@ -117,9 +116,8 @@ function Faqs() {
               </div>
 
         </div>
-
-      </div>
-    </div>
+  </div>
+</div>
   )
 }
 

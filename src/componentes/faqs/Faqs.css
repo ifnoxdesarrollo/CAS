@@ -1,20 +1,23 @@
 .caja-seccion {
   width: 100%;
-  max-width: 1440px;
-  height: 90vh;
+  /* min-width: 50rem!important; */
+  height: 98vh;
 
   background: linear-gradient(var(--color-blanco),var(--color-turquesa));
-  /* background-color: var(--color-turquesa); */
+  background-color: var(--color-turquesa);
 }
 
-.caja-elementos {
+.caja-elementos-faqs {
   width: 80%;
+  max-width: 1440px;
   margin: 0 auto;
+
+  /* background-color: lightgreen; */
 }
 
-.titulo-faq{
-  font-size: 2rem;
-  font-weight: bold;
+.titulo-h2 {
+  /* margin-top: 2rem; */
+  padding-top: 4rem;
 }
 
 .accordion-button {
@@ -26,7 +29,7 @@
 
 .accordion-collapse, .accordion, .accordion-item {
   background-color: transparent !important;
-  border: none;
+  border: none !important;
 }
 
 .accordion-body {
@@ -47,7 +50,26 @@ button:not(.accordion-button.collapsed)::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-dash-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/%3E%3C/svg%3E");
 }
 
+.titulo-h2-faqs{
+  width: 100%;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  height: 2.6875rem;
+  font-weight: bold;
+  color: var(--color-rojo);
+  text-align: center;
+}
 
-
+@media (width <= 415rem){
+  .caja-seccion {
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+  
+    background: linear-gradient(var(--color-blanco),var(--color-turquesa));
+    /* background-color: var(--color-turquesa); */
+  }
+}
 
 

@@ -7,7 +7,7 @@ function Prevencion() {
     <div className='prevencion'>
       <div className='caja-elementos'>
           <div>
-            <h2 className='titulo-h2'>Prevención del suicidio</h2>
+            <h2 className='titulo-h2-prev'>Prevención del suicidio</h2>
           </div>
           <div className='caja-items'>
               <PrevencionItem className='caja-item'></PrevencionItem>

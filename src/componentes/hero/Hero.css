@@ -103,11 +103,93 @@ button.hero__contenedor__botones__boton-2:hover {
   background-color: var(--color-verde-claro-h)!important;
 }
 
-
 .hero__contenedor__botones__titulo-2 {
   font-size: 16px;
   color: #E1E1E1;
   width: 143px;
   height: 25px;
   margin-top: 1.5rem;
+}
+
+@media (max-width:415px){
+  .hero { 
+    background-image: url('../../../imagenes/hero_mobile.jpg');
+    height: 50.75rem;
+  }
+  .hero__contenedor__encabezado {
+    width: 100%;
+    height: 78% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+  
+    /* background-color: lightgrey; */
+  }
+  .hero__contenedor__encabezado__titulo-1 {
+    color: var(--color-amarillo)!important;
+    font-size: 2.5rem;
+    text-align: start;
+    font-weight: 800;
+    
+  }
+  .hero__contenedor__encabezado__titulo-2 {
+    font-size: 1rem;
+    color: var(--color-amarillo)!important;
+    margin-bottom: 14rem;
+    font-weight: 600;
+  }
+  .hero__contenedor__encabezado__titulo-3 {
+    font-size: 1rem !important;
+    color: var(--color-blanco)!important;
+    margin-top: 1.25rem;
+    margin-bottom: 4rem;
+  }
+  .hero__contenedor__botones__titulo-1 {
+    font-size: 1rem !important;
+    color: var(--color-blanco);
+    margin-bottom: 0.5rem;
+  }
+  .hero__contenedor__botones__titulo-2 {
+    font-size: 16px;
+    color: #E1E1E1;
+    width: 100%;
+    height: 25px;
+    margin-top: 0rem;
+  }
+  .hero__contenedor__botones__boton-1 {
+    width: 18.75rem !important;
+    height: 3rem !important;
+    border-radius: 10px !important;
+    margin: 0px 0px 12px 0px !important;
+    background-color: var(--color-verde-oscuro) !important;
+    font-size: 1rem !important;
+    color: #FCFCFC !important; 
+    border: none !important;
+  }
+  
+  .hero__contenedor__botones__boton-2 {
+    width: 18.75rem !important;
+    height: 3rem !important;
+    border-radius: 10px !important;
+    background-color: var(--color-verde-claro)!important;
+    font-size: 1rem !important;
+    color: #FCFCFC !important;
+    border: none !important;
+  }
+
+  .contenedor__botones {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .hero__contenedor__botones {
+    margin-top: 0rem;
+  }
+
+  .hero__contenedor {
+    width: 18.75rem;
+    height: 100%;
+  }
 }

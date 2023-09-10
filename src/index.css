@@ -13,6 +13,7 @@
   --color-verde-claro-h: #20A71B;
   --color-verde-oscuro: #005706;
   --color-verde-oscuro-h: #007208;
+  --color-azul: rgba(12, 38, 52, 1);
   font-size: 16px;
 
 }
@@ -31,11 +32,11 @@
   /* margin-inline: 1rem; */
 }
 
-.boton{
-  width: 24.25rem;
-  height: 3rem;
+.boton {
+  width: 24.25rem!important;
+  height: 3rem !important;
   box-shadow: none !important;
-  
+  display: block;
 }
 
 .boton--gris--oscuro {
@@ -44,14 +45,16 @@
 }
 
 .boton-blanco{
-  font-size: 16px !important;
+  font-size: 1rem !important;
   border: 2px solid !important;
   background-color: #FFFFFF !important;
   border-color: #F79D01 !important;
   color: #F79D01 !important;
-  width: 300px !important;
-  height: 48px !important;
-  margin: 0px 37px 28px 38px !important; 
+  border-radius: .5rem;
+  /* margin: auto; */
+  /* width: 300px !important;
+  height: 48px !important; */
+  /* margin: 0px 37px 28px 38px !important;  */
 }
 
 .boton--rojo {

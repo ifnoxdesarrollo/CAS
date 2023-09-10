@@ -1,11 +1,21 @@
-import React from 'react'
-import ItemVyC from './ItemVyC'
+import React from 'react';
+import './VyC.css';
 
 function VyC() {
   return (
     <div className='vyc'>
-      <ItemVyC titulo={"Voluntariado"} parrafo={"Anualmente el Centro de Atención al Suicida y atención en crisis realiza su convocatoria a aspirantes a voluntarios para la atención telefónica"} textoBoton={"Quiero Ayudar"}></ItemVyC>
-      <ItemVyC titulo={"Capacitación"} parrafo={"Es teórico-práctico, profundizando sobre el vínculo entre consultante y voluntario operador, hecho que constituye la base de nuestra actividad."} textoBoton={"Leer más"}></ItemVyC>
+        <div class="vyc-seccion">
+            <div class="vyc_voluntariado">
+                <h3 className='titulo-vyc'>Voluntariado</h3>
+                <p className='parrafo'>Anualmente el Centro de Asistencia al Suicida y Atención en Crisis realiza su convocatoria a aspirantes a voluntarios para la atención telefónica. Este servicio se nutre año a año, de personas debidamente capacitadas, que generosa y anónimamente, en turnos de dos horas una vez por semana, realizan su tarea.</p>
+            </div>
+            <div class="vyc_capacitacion">
+                <h3 className='titulo-vyc'>Capacitación</h3>
+                <p className='parrafo'>La capacitación de los mismos es teórico-práctica, profundizando sobre el vínculo entre consultante y voluntario operador, hecho que constituye la base de nuestra actividad. El curso de aspirantes a voluntarios tiene una duración de 3 meses de contenidos teóricos, asistiendo 2 horas por semana, para luego continuar con un tutor/a hasta que el voluntario se sienta preparado para atender su primer llamado, otorgándoles un andamiaje cuidadoso para procurar no solo la buena atención del consultante, sino también la salud mental, seguridad y confianza al operador voluntario.</p>
+                <button className='boton boton-blanco'>Quiero ayudar</button>
+            </div>
+        </div>
+
     </div>
   )
 }
