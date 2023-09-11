@@ -14,7 +14,7 @@ function App() {
       {/* <Encabezado></Encabezado> */}
       {/* <Hero></Hero> */}
       {/* <Prevencion></Prevencion> */}
-      {/* <Faqs></Faqs> */}
+      <Faqs></Faqs>
       <VyC></VyC>
       <Contacto></Contacto>
       <Footer></Footer>

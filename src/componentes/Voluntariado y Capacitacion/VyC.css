@@ -119,6 +119,12 @@
   }
 }
 
+@media (max-width: 460px) {
+  .parrafo {
+    width: 302px;
+  }
+}
+
 @media (width <=375px) {
   .vyc {
     height: 175vh;
