@@ -3,41 +3,48 @@
   height: 100vh;
   background-image: url('../../../imagenes/celular-llamando-CAS.png');
   background-size: cover;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  object-fit: cover;
+  object-fit: cover; */
+  display: grid;
+  place-items: center;
 }
 
 .hero__contenedor {
-  width: 80%;
-  height: 100%;
+  width: 860px;
+  max-width: 1400px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   /* background-color: tomato; */
 }
 
 .hero__contenedor__encabezado {
   width: 100%;
-  height: 70% !important;
+  height: 50% !important;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: start;
+  margin-bottom: 4rem;
 
-  /* background-color: lightgrey; */
+  background-color: lightgrey;
 }
 
 .hero__contenedor__encabezado__titulo-1 {
   color: var(--color-amarillo)!important;
-  font-size: 5rem;
+  font-size: 80px;
   text-align: start;
   font-weight: 800;
   
 }
 .hero__contenedor__encabezado__titulo-2 {
-  font-size: 3rem;
+  font-size: 35px;
   color: var(--color-amarillo)!important;
-  margin-bottom: 2.5rem;
+  /* margin-bottom: 2.5rem; */
   font-weight: 600;
 }
 .hero__contenedor__encabezado__titulo-3 {
@@ -47,7 +54,7 @@
 }
 
 .hero__contenedor__botones {
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 
   /* background-color: lightgoldenrodyellow; */
 }
@@ -55,12 +62,11 @@
 .contenedor__botones {
   display: flex;
   justify-content: space-between;
-
   /* background-color: azure; */
 }
 
 .hero__contenedor__botones__titulo-1 {
-  font-size: 1.375;
+  font-size: 1.375rem;
   color: var(--color-blanco);
   margin-bottom: 1.5rem;
 }
