@@ -60,16 +60,19 @@ class Hero extends Component {
             <br />Asistencia al 
             <br />Suicida</h1>
             <h2 className='hero__contenedor__encabezado__titulo-2'>y Atención en Crisis</h2>
-            <h3 className='hero__contenedor__encabezado__titulo-3'>Organizacion sin Fines de Lucro</h3>
           </div>
+
           <div className="hero__contenedor__botones">
-            <h3 className='hero__contenedor__botones__titulo-1'>Atención únicamente Telefónica</h3>
-            <a href={content}>
-              <button className='btn btn-lg hero__contenedor__botones__boton-1' >Llamar por Whatsapp</button>
-            </a>
-            <a href={content2}>
-              <button className='btn btn-lg hero__contenedor__botones__boton-2'>Llamar 0800</button>
-            </a>
+            <h3 className='hero__contenedor__botones__titulo-1'>Organización sin Fines de Lucro</h3>
+            <h3 className='hero__contenedor__botones__titulo-1'>Atención únicamente telefónica</h3>
+            <div className="contenedor__botones">
+                <a href={content}>
+                  <button className='hero__contenedor__botones__boton-1' >Llamar por Whatsapp</button>
+                </a>
+                <a href={content2}>
+                  <button className='hero__contenedor__botones__boton-2'>Llamar 0800</button>
+                </a>
+            </div>
             <h3 className='hero__contenedor__botones__titulo-2'>Llamadas con costo</h3>
           </div>
         </div>
