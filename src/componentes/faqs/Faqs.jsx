@@ -13,6 +13,12 @@ function Faqs() {
     }
   };
 
+  const disminuir = () => {
+    if (claseContenida == 'clase-modificada') {
+      setClaseContenida('clase-modificada')
+    }
+  }
+
   return (
     <div className={`text-center caja-seccion  ${claseContenida}`}>
       <div className={`caja-elementos ${claseContenida}`}>
@@ -88,7 +94,7 @@ function Faqs() {
           <br />
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <button onClick={() => {cambiarClase(); disminuir()}} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                 ¿Cómo puedo ser voluntario/a?
               </button>
             </h2>
