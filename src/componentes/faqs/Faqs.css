@@ -3,8 +3,9 @@
   /* min-width: 50rem!important; */
   height: 98vh;
 
-  background: linear-gradient(var(--color-blanco),var(--color-turquesa));
+  background: linear-gradient(var(--color-blanco), var(--color-turquesa));
   background-color: var(--color-turquesa);
+
 }
 
 .caja-elementos-faqs {
@@ -15,6 +16,14 @@
   /* background-color: lightgreen; */
 }
 
+.clase-inicial {
+  height: 43rem !important;
+}
+
+.clase-modificada {
+  height: 53rem !important;
+}
+
 .titulo-h2 {
   /* margin-top: 2rem; */
   padding-top: 4rem;
@@ -23,11 +32,13 @@
 .accordion-button {
   border: none !important;
   border-radius: 1rem !important;
-  background-color: var(--color-gris-oscuro)!important;
-  color: var(--color-blanco)!important;
+  background-color: var(--color-gris-oscuro) !important;
+  color: var(--color-blanco) !important;
 }
 
-.accordion-collapse, .accordion, .accordion-item {
+.accordion-collapse,
+.accordion,
+.accordion-item {
   background-color: transparent !important;
   border: none !important;
 }
@@ -43,14 +54,14 @@
 
 .accordion-button.collapsed::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
-  
+
 }
 
 button:not(.accordion-button.collapsed)::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-dash-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/%3E%3C/svg%3E");
 }
 
-.titulo-h2-faqs{
+.titulo-h2-faqs {
   width: 100%;
   margin-top: 8rem;
   margin-bottom: 4rem;
@@ -61,15 +72,21 @@ button:not(.accordion-button.collapsed)::after {
   text-align: center;
 }
 
-@media (width <= 415rem){
+@media (width <=415rem) {
   .caja-seccion {
     width: 100%;
     max-width: 1440px;
-    height: 100%;
-  
-    background: linear-gradient(var(--color-blanco),var(--color-turquesa));
+    height: 42rem;
+
+    background: linear-gradient(var(--color-blanco), var(--color-turquesa));
     /* background-color: var(--color-turquesa); */
   }
+
+  .caja-elementos {
+    height: 41rem;
+  }
+
+  .clase-modificada {
+    height: 75rem;
+  }
 }
-
-
