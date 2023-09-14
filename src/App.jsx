@@ -11,15 +11,9 @@ function App() {
 
   return (
     <>
-<<<<<<< HEAD
       <Encabezado></Encabezado>
       <Hero></Hero>
       <Prevencion></Prevencion>
-=======
-      {/* <Encabezado></Encabezado> */}
-      {/* <Hero></Hero> */}
-      {/* <Prevencion></Prevencion> */}
->>>>>>> 9ead2ee1828d1ecf3320d137a42171a629ecfef2
       <Faqs></Faqs>
       <VyC></VyC>
       <Contacto></Contacto>
