@@ -72,7 +72,7 @@ button:not(.accordion-button.collapsed)::after {
   text-align: center;
 }
 
-@media (width <=415rem) {
+@media (width <= 415px) {
   .caja-seccion {
     width: 100%;
     max-width: 1440px;
