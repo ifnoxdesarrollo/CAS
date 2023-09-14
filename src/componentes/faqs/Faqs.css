@@ -87,6 +87,6 @@ button:not(.accordion-button.collapsed)::after {
   }
 
   .clase-modificada {
-    height: 75rem !important;
+    height: 75rem;
   }
 }

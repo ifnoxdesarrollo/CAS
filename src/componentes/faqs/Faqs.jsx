@@ -3,19 +3,83 @@ import './Faqs.css'
 
 function Faqs() {
 
-  const [claseContenida, setClaseContenida] = useState('clase-inicial');
+  const [claseAdicional, setClaseAdicional] = useState('clase-inicial');
+  const [estaAbierto, setEstaAbierto] = useState('faq');
+  const [estaAbierta, setEstaAbierta] = useState(false);
 
-  const cambiarClase = () => {
-    if (claseContenida == 'clase-inicial') {
-      setClaseContenida('clase-modificada');
-    } else {
-      setClaseContenida('clase-inicial');
+
+  // const cambiarClase = () => {
+
+  //   if (claseAdicional == 'clase-inicial') {
+  //     setClaseAdicional('clase-modificada');
+  //   } else if (claseAdicional == 'clase-modificada' && estaAbierto == 'faq1') {
+  //     setClaseAdicional('clase-modificada')
+  //   } else if (claseAdicional == 'clase-modificada' && estaAbierta == false) {
+  //     setClaseAdicional('clase-inicial');
+  //   }
+  // }
+
+  const faq1 = () => {
+    if (estaAbierto == 'faq') {
+      setEstaAbierto('faq1');
+      setClaseAdicional('clase-modificada');
+    } else if (estaAbierto == 'faq1') {
+      setClaseAdicional('clase-modificada');
     }
-  };
+  }
+
+  const faq2 = () => {
+    if (estaAbierto == 'faq') {
+      setEstaAbierto('faq2');
+      setClaseAdicional('clase-modificada');
+    } else if (estaAbierto == 'faq2'){
+      setClaseAdicional('clase-modificada');
+    }
+  }
+
+  const faq3 = () => {
+    if (estaAbierto == 'faq') {
+      setEstaAbierto('faq3')
+      setClaseAdicional('clase-modificada')
+    } else if (estaAbierto == 'faq3'){
+      setClaseAdicional('clase-modificada')
+    }
+  }
+
+  const faq4 = () => {
+    if (estaAbierto == 'faq') {
+      setEstaAbierto('faq4')
+      setClaseAdicional('clase-modificada')
+    } else if (estaAbierto == 'faq4') {
+      setClaseAdicional('clase-modificada')
+    }
+  }
+
+  const faq5 = () => {
+    if (estaAbierto == 'faq') {
+      setEstaAbierto('faq5')
+      setClaseAdicional('clase-modificada')
+    } else if (estaAbierto == 'faq5') {
+      setClaseAdicional('clase-inicial')
+      setEstaAbierto('faq')
+    }
+  }
+
+  const faq6 = () => {
+    if (estaAbierto == 'faq') {
+      setEstaAbierto('faq6')
+      setClaseAdicional('clase-modificada')
+    } else if (estaAbierto == 'faq6') {
+      setClaseAdicional('clase-inicial')
+      setEstaAbierto('faq')
+    }
+  }
+
+
 
   return (
-    <div className={`text-center caja-seccion  ${claseContenida}`}>
-      <div className={`caja-elementos ${claseContenida}`}>
+    <div className={`text-center caja-seccion  ${claseAdicional}`}>
+      <div className={`caja-elementos ${claseAdicional}`}>
         <h2 className='mt-5 titulo-h2'>Preguntas Frecuentes</h2>
         <div className="divider"></div>
         {/* <BotonFaqs></BotonFaqs>
@@ -27,7 +91,7 @@ function Faqs() {
         <div class="accordion accordion-flush" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-              <button onClick={cambiarClase} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button onClick={() => { faq1() }} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 ¿Qué costo tiene llamar al CAS?
               </button>
             </h2>
@@ -43,7 +107,7 @@ function Faqs() {
           <br />
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
-              <button onClick={cambiarClase} class="accordion-button button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button onClick={() => { faq2() }} class="accordion-button button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 ¿Cómo es la atención por WhatsApp?
               </button>
             </h2>
@@ -59,7 +123,7 @@ function Faqs() {
           <br />
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-              <button onClick={cambiarClase} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button onClick={() => { faq3() }} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 ¿Quién contesta la llamada?
               </button>
             </h2>
@@ -75,7 +139,7 @@ function Faqs() {
           <br />
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
-              <button onClick={cambiarClase} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <button onClick={() => { faq4() }} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 ¿En qué horario puedo llamar?
               </button>
             </h2>
@@ -88,7 +152,7 @@ function Faqs() {
           <br />
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFive">
-              <button onClick={cambiarClase} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <button onClick={() => { faq5() }} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                 ¿Cómo puedo ser voluntario/a?
               </button>
             </h2>
@@ -104,7 +168,7 @@ function Faqs() {
           <br />
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingSix">
-              <button onClick={cambiarClase} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              <button onClick={() => { faq6() }} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                 ¿Cuáles son los teléfonos habilitados?
               </button>
             </h2>
