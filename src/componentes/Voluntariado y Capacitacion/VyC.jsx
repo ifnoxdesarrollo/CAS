@@ -3,7 +3,7 @@ import './VyC.css';
 
 function VyC() {
   return (
-    <div className='vyc'>
+    <div id='Voluntariado' className='vyc'>
       <div class="vyc-seccion">
         <div class="vyc_voluntariado">
           <h3 className='titulo-vyc'>Voluntariado</h3>

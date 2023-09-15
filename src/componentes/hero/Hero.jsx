@@ -66,11 +66,11 @@ class Hero extends Component {
             <h3 className='hero__contenedor__botones__titulo-1'>Organización sin Fines de Lucro</h3>
             <h3 className='hero__contenedor__botones__titulo-1'>Atención únicamente telefónica</h3>
             <div className="contenedor__botones">
-                <a href={content}>
-                  <button className='hero__contenedor__botones__boton-1' >Llamar por Whatsapp</button>
-                </a>
                 <a href={content2}>
                   <button className='hero__contenedor__botones__boton-2'>Llamar 0800</button>
+                </a>
+                <a href={content}>
+                  <button className='hero__contenedor__botones__boton-1' >Llamar por Whatsapp</button>
                 </a>
             </div>
             <h3 className='hero__contenedor__botones__titulo-2'>Llamadas con costo</h3>

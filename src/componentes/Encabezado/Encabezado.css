@@ -12,9 +12,33 @@
   font-family: var(--tipografia-ppal);
 }
 
+.navbar-seccion {
+  width: 85%;
+  /* background-color: azure; */
+}
+
 .header-seccion-scroll {
   background-color: var(--color-rojo-transp);
   transition: .7s linear;
+}
+
+#menu ul{
+
+}
+
+#menu ul li a {
+  color: var(--color-blanco);
+  font-family: var(--tipografia-ppal);
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  margin-left: 1rem;
+}
+
+.navbar-brand {
+  color: var(--color-blanco)!important;
+  font-family: var(--tipografia-ppal)!important;
+  font-size: 1.5rem!important;
+  letter-spacing: 1.5px;
 }
 
 /* .navbar-seccion {
