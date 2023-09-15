@@ -16,7 +16,7 @@ function Encabezado() {
 
   return (
     <>
-      <header className={colorNav ? 'header-seccion header-seccion-scroll' : 'header-seccion'}>
+      <header id='Header' className={colorNav ? 'header-seccion header-seccion-scroll' : 'header-seccion'}>
           {/* <a className="header-logo" href="#">CAS Mza</a>
           <nav className='navbar-seccion'>
                 <div className='navbar-seccion-menu'>
@@ -32,10 +32,10 @@ function Encabezado() {
                 </div>
           </nav> */}
 
-          <nav className='navbar navbar-expand-md'>
+          <nav className='navbar navbar-expand-md navbar-seccion'>
             <div className='container-fluid'>
               {/* Logo*/}
-              <a className='navbar-brand' href="#">CAS Mza</a>
+              <a className='navbar-brand' href="#Header">CAS Mza</a>
 
               {/* boton hamburguesa*/}
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,13 +46,13 @@ function Encabezado() {
               <div className="collapse navbar-collapse" id='menu'>
                  <ul className='navbar-nav ms-auto'>
                   <li className='nav-item'>
-                    <a className='nav-link active' href="#">Historia del CAS</a>
+                    <a className='nav-link' href="#">Historia del CAS</a>
                   </li>
                   <li className='nav-item'>
-                    <a className='nav-link active' href="#">Preguntas frecuentes</a>
+                    <a className='nav-link' href="#Faqs">Preguntas frecuentes</a>
                   </li>
                   <li className='nav-item'>
-                    <a className='nav-link active' href="">Voluntariado</a>
+                    <a className='nav-link' href="#Voluntariado">Voluntariado</a>
                   </li>
                  </ul>
 

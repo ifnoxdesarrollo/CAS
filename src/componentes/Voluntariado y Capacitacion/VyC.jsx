@@ -3,9 +3,9 @@ import './VyC.css';
 
 function VyC() {
   return (
-    <div className='vyc'>
-      <div className="vyc-seccion">
-        <div className="vyc_voluntariado">
+    <div id='Voluntariado' className='vyc'>
+      <div class="vyc-seccion">
+        <div class="vyc_voluntariado">
           <h3 className='titulo-vyc'>Voluntariado</h3>
           <p className='parrafo'>Anualmente el Centro de Asistencia al Suicida y Atención en Crisis realiza su convocatoria a aspirantes a voluntarios para la atención telefónica. Este servicio se nutre año a año, de personas debidamente capacitadas, que generosa y anónimamente, en turnos de dos horas una vez por semana, realizan su tarea.</p>
         </div>
