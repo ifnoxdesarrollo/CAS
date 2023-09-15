@@ -1,7 +1,5 @@
 .vyc {
   width: 100%;
-  height: 90vh;
-
   background-image: url('../../../imagenes/sala-de-escucha-llamados.png');
   background-size: cover;
   /* object-fit: cover; */
@@ -27,7 +25,6 @@
     "vyc_voluntariado"
     "vyc_capacitacion";
   width: 70%;
-  margin-top: -7rem;
 }
 
 .vyc_voluntariado {
@@ -36,7 +33,7 @@
 
 .vyc_capacitacion {
   grid-area: vyc_capacitacion;
-  height: 200px !important;
+  padding-bottom: 2.5rem;
 }
 
 .vyc_boton {
@@ -64,8 +61,39 @@
   font-weight: bold;
   color: var(--color-rojo);
 }
+@media (width <= 900px){
+  .parrafo {
+    width: 40rem;
+  }
+}
+@media (width <= 700px){
+  .parrafo {
+    width: 32rem;
+  }
+}
 
-@media (width <=415px) {
+@media (width <=600px) {
+
+  .parrafo {
+    width: 26rem;
+  }
+
+  .boton .boton-blanco {
+    width: 14rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .parrafo {
+    width: 22rem;
+  }
+}
+
+@media (width <= 415px) {
+  .boton .boton-blanco{
+    width: 20rem !important;
+  }
+
   .parrafo {
     color: var(--color-gris-oscuro);
     font-weight: 500;
@@ -73,10 +101,9 @@
     line-height: 22px;
     font-size: 1rem;
     text-align: start;
-    width: 18.875rem;
+    width: 90%;
     height: 100%;
     /* margin: 0px 36px 32px 37px; */
-    padding: 0;
   }
 
   .titulo-vyc {
@@ -100,54 +127,22 @@
 
 }
 
-@media (width <=600px) {
-
-  .vyc {
-    height: 150vh;
-  }
-
-  .vyc-seccion {
-    margin-top: -12rem;
-  }
-
-  .parrafo {
-    width: 450px;
-  }
-
-  .boton .boton-blanco {
-    width: 14rem !important;
-  }
-}
-
-@media (max-width: 460px) {
-  .parrafo {
-    width: 302px;
-  }
-}
 
 @media (width <=375px) {
-  .vyc {
-    height: 175vh;
-  }
+  
 
   .vyc-seccion {
-    margin-top: -16rem;
-  }
-
-  .parrafo {
-    width: 300px;
+    margin-top: -6rem;
   }
 
   .vyc_boton {
     margin-top: 3rem;
-    width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
-  .parrafo-1{ 
-    height: 130px;
+  .parrafo {
+    width: 70%;
   }
 }

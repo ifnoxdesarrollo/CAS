@@ -75,11 +75,9 @@ function Faqs() {
     }
   }
 
-
-
   return (
-    <div className={`text-center caja-seccion  ${claseAdicional}`}>
-      <div className={`caja-elementos ${claseAdicional}`}>
+    <div className={`text-center caja-seccion`}>
+      <div className={`caja-elementos-faqs`}>
         <h2 className='mt-5 titulo-h2'>Preguntas Frecuentes</h2>
         <div className="divider"></div>
         {/* <BotonFaqs></BotonFaqs>
@@ -88,15 +86,15 @@ function Faqs() {
               <BotonFaqs></BotonFaqs>
               <BotonFaqs></BotonFaqs>
               <BotonFaqs></BotonFaqs> */}
-        <div class="accordion accordion-flush" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button onClick={() => { faq1() }} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <div className="accordion accordion-flush" id="accordionExample">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingOne">
+              <button onClick={() => { faq1() }} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 ¿Qué costo tiene llamar al CAS?
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
+            <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div className="accordion-body">
                 Llamar al <strong>0-800-8000-135</strong> tiene el valor d aun llamada a un teléfono fijo, es decir, si se llama desde un teléfono celular, la llamada tiene costo de aire del servicio de la compañía telefónica.
                 <br />
                 <br />
@@ -105,14 +103,14 @@ function Faqs() {
             </div>
           </div>
           <br />
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button onClick={() => { faq2() }} class="accordion-button button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingTwo">
+              <button onClick={() => { faq2() }} className="accordion-button button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 ¿Cómo es la atención por WhatsApp?
               </button>
             </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
+            <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div className="accordion-body">
                 Para brindar una mejor calidad de servicio, la atención por WhatsApp, es ÚNICAMENTE por llamada telefónica, es decir, no realizamos atención por Chat ni por videollamada.
                 <br />
                 <br />
@@ -121,14 +119,14 @@ function Faqs() {
             </div>
           </div>
           <br />
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button onClick={() => { faq3() }} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingThree">
+              <button onClick={() => { faq3() }} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 ¿Quién contesta la llamada?
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
+            <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div className="accordion-body">
                 Las llamadas son atendidas por personas voluntarias que han recibido una capacitación específica para realizar esta tarea. Es decir, son operadores con intención de escucha activa y amorosa, con muchas ganas de ayudarte.
                 <br />
                 <br />
@@ -137,27 +135,27 @@ function Faqs() {
             </div>
           </div>
           <br />
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button onClick={() => { faq4() }} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingFour">
+              <button onClick={() => { faq4() }} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 ¿En qué horario puedo llamar?
               </button>
             </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
+            <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div className="accordion-body">
                 Puedes ver nuestros horarios actualizados en nuestra página web, Facebook e Instagram institucional. Atendemos los 365 días del año, estor horarios van variando de acuerdo a la disponibilidad	de nuestros voluntarios. A medida que se sumen más voluntarios, podremos ampliar nuestros horarios de atención.
               </div>
             </div>
           </div>
           <br />
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button onClick={() => { faq5() }} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingFive">
+              <button onClick={() => { faq5() }} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                 ¿Cómo puedo ser voluntario/a?
               </button>
             </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
+            <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div className="accordion-body">
                 Hacemos una convocatoria anual para reclutar voluntarios, en la cual los aspirantes son evaluados por las psicólogas de nuestro equipo, para asegurarnos que dan con el perfil de voluntario buscado, procurando que la actividad sea saludable para los operadores y los consultantes.
                 <br />
                 <br />
@@ -166,14 +164,14 @@ function Faqs() {
             </div>
           </div>
           <br />
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSix">
-              <button onClick={() => { faq6() }} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingSix">
+              <button onClick={() => { faq6() }} className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                 ¿Cuáles son los teléfonos habilitados?
               </button>
             </h2>
-            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
+            <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div className="accordion-body">
                 Tenemos horario de oficina, en donde contamos con nuestro teléfono fijo 0-800 y teléfono móvil para llamadas de WhatsApp, horarios de guardia y horarios especiales desde teléfonos móviles para días festivos, fines de semana, etcétera. Todos están especificados por día y horario en nuestros horarios institucionales. Estos son:
                 <br />
                 <strong>Oficina: </strong>

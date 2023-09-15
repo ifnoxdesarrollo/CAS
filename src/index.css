@@ -32,7 +32,7 @@
 }
 
 .boton {
-  width: 24.25rem!important;
+  width: 24.25rem ;
   height: 3rem !important;
   box-shadow: none !important;
   display: block;
@@ -63,6 +63,14 @@
 
 .boton--verde {
   background-color: var(--color-verde);
+}
+
+@media (width <=415px) {
+
+  .boton {
+    width: 20rem !important;
+  }
+
 }
 
 @media (width <=375px) {

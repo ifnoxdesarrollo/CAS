@@ -1,11 +1,9 @@
 .contacto {
-  height: 60vh;
   background-color: var(--color-rojo);
 
 }
 
 .contenedor {
-  height: 60vh;
   width: 50%;
   margin: 0 auto;
   /* height: 304px; */
@@ -15,6 +13,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-block: 2rem;
 }
 
 .contacto-titulo {

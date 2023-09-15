@@ -1,7 +1,6 @@
 .caja-seccion {
   width: 100%;
   /* min-width: 50rem!important; */
-  height: 98vh;
 
   background: linear-gradient(var(--color-blanco), var(--color-turquesa));
   background-color: var(--color-turquesa);
@@ -12,17 +11,17 @@
   width: 80%;
   max-width: 1440px;
   margin: 0 auto;
-
+  padding-bottom: 2rem;
   /* background-color: lightgreen; */
 }
-
+/* 
 .clase-inicial {
   height: 43rem !important;
 }
 
 .clase-modificada {
   height: 53rem !important;
-}
+} */
 
 .titulo-h2 {
   /* margin-top: 2rem; */
@@ -76,8 +75,6 @@ button:not(.accordion-button.collapsed)::after {
   .caja-seccion {
     width: 100%;
     max-width: 1440px;
-    height: 42rem;
-
     background: linear-gradient(var(--color-blanco), var(--color-turquesa));
     /* background-color: var(--color-turquesa); */
   }
