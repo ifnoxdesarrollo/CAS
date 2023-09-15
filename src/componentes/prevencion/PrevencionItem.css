@@ -19,6 +19,7 @@ body.modal-activo {
   color: var(--color-rojo);
   text-align: center;
   margin-bottom: 2rem;
+  padding-top: 2rem;
   font-size: 2rem!important;
   font-weight: bold;
 }
@@ -29,7 +30,6 @@ body.modal-activo {
   /* margin: 20px 19px; */
   /* margin: 0.5rem; */
   object-fit: cover;
-  
 }
 
 .titulo-imagen {
@@ -126,6 +126,16 @@ body.modal-activo {
   
 }
 
+@media(width <= 600px){
+  .parrafo-imagen {
+    color: var(--color-gris-claro);
+    font-size: 1.25rem;
+    padding: 7px;
+    text-align: center;
+  }
+  
+}
+
 @media (max-width:415px) { 
 
 .br-prevencion{
@@ -150,10 +160,8 @@ body.modal-activo {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 1717px;
   width: 375px;
   background-color: #F79D01;
-  height: 114rem;
 }
 
 .prevencion-img {
@@ -197,8 +205,34 @@ body.modal-activo {
 }
 
 .titulo-h2-prev {
-  margin-bottom: 0.875rem;
+  margin-bottom: 3rem;
   height: 5.3125rem;
 }
 
+}
+@media(width <= 355px){
+  .tarjeta{
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 10px;
+    width: 18.25rem;
+    height: 27.25rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .prevencion-img {
+    width: 16.875rem;
+    height: auto;
+    object-fit: cover;
+  }
+  .boton-prev {
+    margin: 1.5rem 1.25rem 0.9375rem;
+    border-radius: 10px;
+    width: 16.75rem;
+    height: 3rem;
+    font-size: 1rem !important;
+  }
 }
