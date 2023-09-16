@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './VyC.css';
 
 function VyC() {
+
+  const habilitado = false;
+
   return (
     <div id='Voluntariado' className='vyc'>
       <div class="vyc-seccion">
@@ -16,7 +19,7 @@ function VyC() {
           </p>
 
           <div className="vyc_boton">
-            <button className='boton boton-blanco'>Quiero ayudar</button>
+            <button className={ habilitado ? 'boton boton-blanco' : 'boton--gris--claro'} >Quiero ayudar</button>
           </div>
         </div>
       </div>
