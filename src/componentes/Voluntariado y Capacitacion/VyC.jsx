@@ -12,7 +12,9 @@ function VyC() {
         <div className="vyc_capacitacion">
           <h3 className='titulo-vyc'>Capacitación</h3>
           <p className='parrafo parrafo-1'>La capacitación de los mismos es teórico-práctica, profundizando sobre el vínculo entre consultante y voluntario operador, hecho que constituye la base de nuestra actividad.</p>
-          <p className='parrafo'> El curso de aspirantes a voluntarios tiene una duración de 3 meses de contenidos teóricos, asistiendo 2 horas por semana, para luego continuar con un tutor/a hasta que el voluntario se sienta preparado para atender su primer llamado, otorgándoles un andamiaje cuidadoso para procurar no solo la buena atención del consultante, sino también la salud mental, seguridad y confianza al operador voluntario.</p>
+          <p className='parrafo'> El curso de aspirantes a voluntarios tiene una duración de 3 meses de contenidos teóricos, asistiendo 2 horas por semana, para luego continuar con un tutor/a hasta que el voluntario se sienta preparado para atender su primer llamado, otorgándoles un andamiaje cuidadoso para procurar no solo la buena atención del consultante, sino también la salud mental, seguridad y confianza al operador voluntario.
+          </p>
+
           <div className="vyc_boton">
             <button className='boton boton-blanco'>Quiero ayudar</button>
           </div>

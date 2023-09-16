@@ -17,6 +17,10 @@ function Contacto() {
           <a href="https://instagram.com/cas.mendoza.1?igshid=MzRlODBiNWFlZA==" target='_blank'>
             <i className="bi bi-instagram icono"></i>
           </a>
+          
+          <a href="https://www.instagram.com/cas.mendoza.1" target='_blank'>
+            <i className="bi bi-instagram icono"></i></a>
+          
           <i className="bi bi-phone icono"></i>
           <a href="mailto:cas.mendoza.argentina@gmail.com" target='_blank'>
             <i className="bi bi-envelope icono"></i>
@@ -24,6 +28,11 @@ function Contacto() {
           <a href='https://www.facebook.com/asistenciaalsuicidaMza?mibextid=ZbWKwL' target='_blank'>
             <i className="bi bi-facebook icono"></i>
           </a>
+          
+          <a href="mailto:cas.mendoza.argentina@gmail.com" target='_blank'>
+            <i className="bi bi-envelope icono"></i></a>
+          <a href="https://www.facebook.com/asistenciaalsuicidaMza" target='_blank'>
+            <i className="bi bi-facebook icono"></i></a>
         </div>
       </div>
     </div>

@@ -2,56 +2,68 @@
   width: 100%;
   background-image: url('../../../imagenes/sala-de-escucha-llamados.png');
   background-size: cover;
+  background-attachment: center;
+  object-fit: fill;
   /* object-fit: cover; */
   display: grid;
   place-items: center;
+
+  /* background-color: aquamarine; */
 }
 
 .vyc-seccion {
-  /* background-color: lightcoral; */
-
+  height: 600px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
-  gap: 1em 0px;
+  /* gap: 1rem 0px; */
   grid-auto-flow: row dense;
   justify-content: center;
-  align-content: space-around;
+  align-content: center;
   justify-items: center;
   align-items: center;
   grid-template-areas:
-    "vyc_voluntariado"
-    "vyc_capacitacion";
-  width: 70%;
+  "vyc_voluntariado"
+  "vyc_capacitacion";
+
+  /* background-color: lightcoral; */
+  /* width: 70%; */
 }
 
 .vyc_voluntariado {
   grid-area: vyc_voluntariado;
+  padding-top: 2rem;
+  
+  /* background-color: beige; */
 }
 
 .vyc_capacitacion {
   grid-area: vyc_capacitacion;
   padding-bottom: 2.5rem;
+
+  /* background-color: beige; */
 }
 
 .vyc_boton {
   width: 100%;
   display: flex !important;
   justify-content: center !important;
+  margin-top: 2rem;
 }
 
 .parrafo {
   color: var(--color-gris-oscuro);
   font-weight: 500;
   margin-inline: 1.5rem;
-  line-height: 22px;
+  line-height: 24px;
   font-size: 1.125rem;
   text-align: start;
   width: 800px;
   margin: 1rem 0;
   padding: 0;
+
 }
 
 .titulo-vyc {
@@ -61,11 +73,24 @@
   font-weight: bold;
   color: var(--color-rojo);
 }
+
 @media (width <= 900px){
+
+  .vyc {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .vyc-seccion{
+    height: 700px;
+  }
+
   .parrafo {
     width: 40rem;
   }
+
 }
+
 @media (width <= 700px){
   .parrafo {
     width: 32rem;
@@ -74,8 +99,12 @@
 
 @media (width <=600px) {
 
+  .vyc-seccion{
+    height: 800px;
+  }
+
   .parrafo {
-    width: 26rem;
+    width: 28rem;
   }
 
   .boton .boton-blanco {
@@ -84,46 +113,54 @@
 }
 
 @media (max-width: 480px) {
+
   .parrafo {
     width: 22rem;
   }
 }
 
-@media (width <= 415px) {
+@media (width <=414px) {
+
+  .vyc {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../imagenes/vyc_mobile.jpg');
+    background-size: cover;
+    
+  }
+
+  .vyc-seccion {
+    display: grid;
+    place-items: center;
+  }
+
+  .vyc_voluntariado, .vyc_capacitacion {
+    /* width: 80%; */
+  }
+
   .boton .boton-blanco{
     width: 20rem !important;
   }
 
   .parrafo {
-    color: var(--color-gris-oscuro);
-    font-weight: 500;
-    margin-inline: 1.5rem;
-    line-height: 22px;
+    /* color: var(--color-gris-oscuro); */
+    /* font-weight: 500; */
+    /* margin-inline: 1.5rem; */
     font-size: 1rem;
     text-align: start;
-    width: 90%;
     height: 100%;
-    /* margin: 0px 36px 32px 37px; */
+    margin-left: 0.75rem;
+
+    /* background-color: aqua; */
   }
 
   .titulo-vyc {
-    margin: 0px 83px 0px;
-    font-size: 2rem;
-    text-align: center;
-    font-weight: bold;
-    color: #A3185B;
+    margin: 0;
+    font-size: 32px;
   }
+  
 
-  .vyc {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url('../../../imagenes/vyc_mobile.jpg');
-    background-size: cover;
-  }
+  
 
 }
 
@@ -132,17 +169,23 @@
   
 
   .vyc-seccion {
+    display: grid;
+    place-items: center;
+
     margin-top: -6rem;
+    height: 983px;
   }
 
-  .vyc_boton {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .vyc_voluntariado, .vyc_capacitacion {
+    padding: 0;
   }
+
   .parrafo {
-    width: 70%;
+    width: 80%;
   }
+
+  .boton-blanco {
+    width: 300px !important;
+  }
+
 }

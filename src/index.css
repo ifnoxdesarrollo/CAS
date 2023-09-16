@@ -65,6 +65,14 @@
   background-color: var(--color-verde);
 }
 
+
+@media (width <= 900px){
+  
+  :root {
+    font-size: 15px;
+  }
+}
+
 @media (width <=415px) {
 
   .boton {
@@ -80,3 +88,4 @@
   }
 
 }
+
