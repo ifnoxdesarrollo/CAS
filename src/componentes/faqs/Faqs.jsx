@@ -95,10 +95,10 @@ function Faqs() {
             </h2>
             <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div className="accordion-body">
-                Llamar al <strong>0-800-8000-135</strong> tiene el valor d aun llamada a un teléfono fijo, es decir, si se llama desde un teléfono celular, la llamada tiene costo de aire del servicio de la compañía telefónica.
+                Llamar al <strong>0-800-8000-135</strong> tiene el valor de una llamada a un teléfono fijo, es decir, si se llama desde un teléfono celular, la llamada tiene costo de aire del servicio de la compañía telefónica.
                 <br />
                 <br />
-                La llamada al 0-800 es gratuita si la hacemos desde un teléfono fijo. Como la gran mayoría de la población se comunica, actualmente, por teléfono móvil, hemos habilitado	 el servicio de llamadas por WhatsApp, para que las mismas san completamente <strong>GRATUITAS</strong> y accesibles a mayor cantidad de personas.
+                La llamada al 0-800 es gratuita si la hacemos desde un teléfono fijo. Como la gran mayoría de la población se comunica, actualmente, por teléfono móvil, hemos habilitado	 el servicio de llamadas por WhatsApp, para que las mismas sean completamente <strong>GRATUITAS</strong> y accesibles a mayor cantidad de personas.
               </div>
             </div>
           </div>
@@ -143,7 +143,7 @@ function Faqs() {
             </h2>
             <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
               <div className="accordion-body">
-                Puedes ver nuestros horarios actualizados en nuestra página web, Facebook e Instagram institucional. Atendemos los 365 días del año, estor horarios van variando de acuerdo a la disponibilidad	de nuestros voluntarios. A medida que se sumen más voluntarios, podremos ampliar nuestros horarios de atención.
+                Puedes ver nuestros horarios actualizados en nuestra página web, Facebook e Instagram institucional. Atendemos los 365 días del año, estos horarios van variando de acuerdo a la disponibilidad	de nuestros voluntarios. A medida que se sumen más voluntarios, podremos ampliar nuestros horarios de atención.
               </div>
             </div>
           </div>
@@ -177,7 +177,8 @@ function Faqs() {
                 <strong>Oficina: </strong>
                 <br />
                 - 0 800 8000 315 (gratuito llamando desde teléfono fijo, sino consume tiempo de aire)
-                - 135 (llamando desde la línea Claro, si llamas desde otra línea, te comunicarás con el CAS de Buenos Aires ó Córdoba)
+                - 135 (llamando desde la línea Claro, si llamas desde otra línea, te comunicarás con el CAS de Buenos Aires ó Córdoba).
+                <br />
                 - (+54 9) 261 557 03 14 para llamadas de WhatsApp en horario de oficina.
                 <br />
                 <strong>Guardia y horarios especiales: </strong>
