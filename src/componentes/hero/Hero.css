@@ -1,6 +1,6 @@
-.hero { 
+.hero {
   width: 100vw;
-  height: 100vh;
+  height: 124vh;
   background-color: var(--color-turquesa);
   background-image: url('../../../imagenes/celular-llamando-CAS.png');
   background-size: cover;
@@ -21,7 +21,7 @@
   height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
   margin-top: 3rem;
 
   /* background-color: rgba(220, 220, 220, 0.6); */
@@ -40,15 +40,16 @@
 }
 
 .hero__contenedor__encabezado__titulo-1 {
-  color: var(--color-amarillo)!important;
+  color: var(--color-amarillo) !important;
   font-size: 80px;
   text-align: start;
   font-weight: 800;
-  
+
 }
+
 .hero__contenedor__encabezado__titulo-2 {
   font-size: 35px;
-  color: var(--color-amarillo)!important;
+  color: var(--color-amarillo) !important;
   /* margin-bottom: 2.5rem; */
   font-weight: 600;
 }
@@ -86,12 +87,12 @@
   /* margin: 0px 37px 12px 38px !important; */
   background-color: var(--color-verde-oscuro) !important;
   font-size: 1.2rem !important;
-  color: #FCFCFC !important; 
+  color: #FCFCFC !important;
   border: none !important;
 }
 
 button.hero__contenedor__botones__boton-1:hover {
-  background-color: var(--color-verde-oscuro-h)!important;
+  background-color: var(--color-verde-oscuro-h) !important;
 }
 
 .hero__contenedor__botones__boton-2 {
@@ -99,14 +100,14 @@ button.hero__contenedor__botones__boton-1:hover {
   height: 48px !important;
   border-radius: 10px !important;
   /* margin: 0px 37px 5px 38px !important; */
-  background-color: var(--color-verde-claro)!important;
+  background-color: var(--color-verde-claro) !important;
   font-size: 1.2rem !important;
   color: #FCFCFC !important;
   border: none !important;
 }
 
 button.hero__contenedor__botones__boton-2:hover {
-  background-color: var(--color-verde-claro-h)!important;
+  background-color: var(--color-verde-claro-h) !important;
 }
 
 .hero__contenedor__botones__titulo-2 {
@@ -114,14 +115,15 @@ button.hero__contenedor__botones__boton-2:hover {
   color: #E1E1E1;
   width: 143px;
   height: 25px;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 }
 
-@media (max-width:415px){
-  .hero { 
+@media (max-width:415px) {
+  .hero {
     background-image: url('../../../imagenes/hero_mobile.jpg');
     height: 50.75rem;
   }
+
   .hero__contenedor__encabezado {
     width: 100%;
     height: 78% !important;
@@ -129,33 +131,38 @@ button.hero__contenedor__botones__boton-2:hover {
     flex-direction: column;
     justify-content: flex-end;
     align-items: start;
-  
+
     /* background-color: lightgrey; */
   }
+
   .hero__contenedor__encabezado__titulo-1 {
-    color: var(--color-amarillo)!important;
+    color: var(--color-amarillo) !important;
     font-size: 2.5rem;
     text-align: start;
     font-weight: 800;
-    
+
   }
+
   .hero__contenedor__encabezado__titulo-2 {
     font-size: 1rem;
-    color: var(--color-amarillo)!important;
+    color: var(--color-amarillo) !important;
     margin-bottom: 14rem;
     font-weight: 600;
   }
+
   .hero__contenedor__encabezado__titulo-3 {
     font-size: 1rem !important;
-    color: var(--color-blanco)!important;
+    color: var(--color-blanco) !important;
     margin-top: 1.25rem;
     margin-bottom: 4rem;
   }
+
   .hero__contenedor__botones__titulo-1 {
     font-size: 1rem !important;
     color: var(--color-blanco);
     margin-bottom: 0.5rem;
   }
+
   .hero__contenedor__botones__titulo-2 {
     font-size: 16px;
     color: #E1E1E1;
@@ -163,6 +170,7 @@ button.hero__contenedor__botones__boton-2:hover {
     height: 25px;
     margin-top: 0rem;
   }
+
   .hero__contenedor__botones__boton-1 {
     width: 18.75rem !important;
     height: 3rem !important;
@@ -170,15 +178,15 @@ button.hero__contenedor__botones__boton-2:hover {
     margin: 0px 0px 12px 0px !important;
     background-color: var(--color-verde-oscuro) !important;
     font-size: 1rem !important;
-    color: #FCFCFC !important; 
+    color: #FCFCFC !important;
     border: none !important;
   }
-  
+
   .hero__contenedor__botones__boton-2 {
     width: 18.75rem !important;
     height: 3rem !important;
     border-radius: 10px !important;
-    background-color: var(--color-verde-claro)!important;
+    background-color: var(--color-verde-claro) !important;
     font-size: 1rem !important;
     color: #FCFCFC !important;
     border: none !important;
