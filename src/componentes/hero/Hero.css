@@ -198,6 +198,11 @@ button.hero__contenedor__botones__boton-2:hover {
 
 }
 
+.div-modales {
+  background-color: red;
+  display: block;
+}
+
 @media(width <=1000px) {
 
   .hero__contenedor {
@@ -249,7 +254,7 @@ button.hero__contenedor__botones__boton-2:hover {
 
 @media (max-width:520px) {
   .hero {
-    background-image: url('../../../imagenes/hero_mobile.jpg');
+    background-image: url('../../../imagenes/hero-celular-mobile.png');
     height: 50.75rem;
   }
 

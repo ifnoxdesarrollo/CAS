@@ -1,7 +1,11 @@
 import React, { Component, useEffect, useState } from 'react'
 import './Hero.css'
 import '../prevencion/PrevencionItem.css'
-import HeroModal from './HeroModal';
+import HeroModalNN from './HeroModalNN';
+import HeroModalWsp from './HeroModalWsp';
+import HeroModal0800 from './HeroModal0800';
+
+
 
 class Hero extends Component {
 
@@ -10,6 +14,8 @@ class Hero extends Component {
     super(props);
     this.state = {
       currentTime: new Date(),
+      modal: false,
+
     };
   }
 
@@ -38,7 +44,7 @@ class Hero extends Component {
 
     let content;
     let content2;
-    let hayAtencionWsp = false;
+    let hayAtencionWsp = true;
     let hayAtencion0800 = false;
 
     const fecha = new Date();
@@ -51,9 +57,7 @@ class Hero extends Component {
 
     let modal = false;
 
-    const toggleModal = () => {
-      modal = !modal;
-    }
+
 
 
     function formatearFeriado(fecha) {
@@ -122,6 +126,22 @@ class Hero extends Component {
       hayAtencion0800 = false;
     }
 
+    const dispararModal1 = () => {
+
+      if (hayAtencion0800 === false && hayAtencionWsp === false) {
+        return <HeroModalNN></HeroModalNN>
+      } else if (hayAtencion0800 === false && hayAtencionWsp === true) {
+        return <HeroModalWsp></HeroModalWsp>
+      } else if (hayAtencion0800 === true && hayAtencionWsp === false) {
+        return <HeroModal0800></HeroModal0800>
+      } else {
+        return "";
+      }
+    }
+
+    function prueba() {
+      this.setState({ modal: true });
+    }
 
     const hero =
       <div className="hero">
@@ -136,9 +156,32 @@ class Hero extends Component {
           <div className="hero__contenedor__botones">
             <h3 className='hero__contenedor__botones__titulo-1'>Organización sin Fines de Lucro</h3>
             <h3 className='hero__contenedor__botones__titulo-1'>Atención únicamente telefónica</h3>
-            <HeroModal content={content} content2={content2} hayAtencion0800={hayAtencion0800} hayAtencionWsp={hayAtencionWsp}></HeroModal>
+            <div className="contenedor__botones">
+              {/* <a href={props.content2}> */}
+              <a href="">
+                <button className='hero__contenedor__botones__boton-2' onClick={() => prueba()}>Llamar 0800</button>
+              </a>
+              {/* <a href={props.content}> */}
+              <a>
+                <button className="hero__contenedor__botones__boton-1" onClick={() => prueba()} >Llamar por Whatsapp</button>
+              </a>
+            </div>
+
             <h3 className='hero__contenedor__botones__titulo-2'>Llamadas con costo</h3>
+
           </div>
+
+          {this.state.modal && (
+            <div className="div-modales">
+              {hayAtencion0800 === false && hayAtencionWsp === false ? (
+                <HeroModalNN modal={this.state.modal}></HeroModalNN>
+              ) : hayAtencion0800 === false && hayAtencionWsp === true ? (
+                <HeroModalWsp modal={this.state.modal}></HeroModalWsp>
+              ) : hayAtencion0800 === true && hayAtencionWsp === false ? (
+                <HeroModal0800 modal={this.state.modal}></HeroModal0800>
+              ) : null}
+            </div>
+          )}
         </div>
       </div >
 
