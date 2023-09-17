@@ -4,14 +4,19 @@
   background-size: cover;
   background-attachment: center;
   object-fit: fill;
+  background-attachment: center;
+  object-fit: fill;
   /* object-fit: cover; */
   display: grid;
   place-items: center;
 
   /* background-color: aquamarine; */
+
+  /* background-color: aquamarine; */
 }
 
 .vyc-seccion {
+  height: 600px;
   height: 600px;
   display: grid;
   grid-template-columns: 1fr;
@@ -19,8 +24,10 @@
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   /* gap: 1rem 0px; */
+  /* gap: 1rem 0px; */
   grid-auto-flow: row dense;
   justify-content: center;
+  align-content: center;
   align-content: center;
   justify-items: center;
   align-items: center;
@@ -30,6 +37,7 @@
 
   /* background-color: lightcoral; */
   /* width: 70%; */
+  
 }
 
 .vyc_voluntariado {
@@ -44,6 +52,7 @@
   padding-bottom: 2.5rem;
 
   /* background-color: beige; */
+
 }
 
 .vyc_boton {
@@ -58,12 +67,12 @@
   font-weight: 500;
   margin-inline: 1.5rem;
   line-height: 24px;
+  line-height: 24px;
   font-size: 1.125rem;
   text-align: start;
   width: 800px;
   margin: 1rem 0;
   padding: 0;
-
 }
 
 .titulo-vyc {
@@ -74,7 +83,34 @@
   color: var(--color-rojo);
 }
 
+.boton--gris--claro {
+  width: 300px;
+  height: 3rem;
+  box-shadow: none!important;
+  display: block;
+  background-color: rgb(151, 150, 150) !important;
+  color: var(--color-gris-oscuro)!important;
+  font-size: 1rem !important;
+  border: 2px solid var(--color-gris-claro)!important;
+  border-radius: .5rem;
+  width: 300px !important;
+  font-size: 1rem !important;
+  cursor: not-allowed !important;
+}
+
+
+
 @media (width <= 900px){
+
+  .vyc {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .vyc-seccion{
+    height: 700px;
+  }
+
 
   .vyc {
     background-size: cover;
@@ -89,7 +125,9 @@
     width: 40rem;
   }
 
+
 }
+
 
 @media (width <= 700px){
   .parrafo {
@@ -103,13 +141,14 @@
     height: 800px;
   }
 
+  .vyc-seccion{
+    height: 800px;
+  }
+
   .parrafo {
     width: 28rem;
   }
 
-  .boton .boton-blanco {
-    width: 14rem !important;
-  }
 }
 
 @media (max-width: 480px) {
@@ -138,20 +177,16 @@
     /* width: 80%; */
   }
 
-  .boton .boton-blanco{
-    width: 20rem !important;
-  }
 
   .parrafo {
-    /* color: var(--color-gris-oscuro); */
-    /* font-weight: 500; */
-    /* margin-inline: 1.5rem; */
     font-size: 1rem;
     text-align: start;
     height: 100%;
     margin-left: 0.75rem;
 
     /* background-color: aqua; */
+    margin-left: 0.75rem;
+
   }
 
   .titulo-vyc {
@@ -159,15 +194,18 @@
     font-size: 32px;
   }
   
-
-  
-
 }
 
-
 @media (width <=375px) {
-  
 
+  .vyc {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../imagenes/vyc_mobile.jpg');
+    background-size: cover;
+    
+  }
+  
   .vyc-seccion {
     display: grid;
     place-items: center;
@@ -177,15 +215,11 @@
   }
 
   .vyc_voluntariado, .vyc_capacitacion {
-    padding: 0;
+    width: 90%;
   }
 
   .parrafo {
-    width: 80%;
-  }
-
-  .boton-blanco {
-    width: 300px !important;
+    width: auto;
   }
 
 }

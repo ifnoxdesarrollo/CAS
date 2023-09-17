@@ -77,7 +77,7 @@ function Faqs() {
 
   return (
     <div className={`text-center caja-seccion`}>
-      <div className={`caja-elementos-faqs`}>
+      <div className={`caja-elementos-faqs`} id='Faqs'>
         <h2 className='mt-5 titulo-h2'>Preguntas Frecuentes</h2>
         <div className="divider"></div>
         {/* <BotonFaqs></BotonFaqs>

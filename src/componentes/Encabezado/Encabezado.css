@@ -1,5 +1,6 @@
 .header-seccion {
   width: 100%;
+  
   height: 8vh;
   position: fixed;
   overflow: hidden;
@@ -12,8 +13,10 @@
   font-family: var(--tipografia-ppal);
 }
 
-.navbar-seccion {
-  width: 85%;
+.navbar {
+  max-width: 1250px;
+  /* margin: 0 auto;
+  width: 85%; */
   /* background-color: azure; */
 }
 
@@ -22,79 +25,45 @@
   transition: .7s linear;
 }
 
-#menu ul{
-
-}
-
-#menu ul li a {
-  color: var(--color-blanco);
-  font-family: var(--tipografia-ppal);
-  font-size: 1.2rem;
-  letter-spacing: 1.5px;
-  margin-left: 1rem;
+.navbar-color {
+  width: 100%;
+  background-color: transparent;
 }
 
 .navbar-brand {
   color: var(--color-blanco)!important;
+}
+
+.nav-link{
   font-family: var(--tipografia-ppal)!important;
-  font-size: 1.5rem!important;
-  letter-spacing: 1.5px;
+  font-size: 24px!important;
+  color: var(--color-gris-oscuro)!important;
 }
 
-/* .navbar-seccion {
-  max-width: 1400px;
-  width: auto;
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items:flex-start;
-  text-align: left; */
-
-  /* background-color: aquamarine; 
-}*/
-
-
-/* .navbar-seccion-menu {
-  width: 100%;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-
+.offcanvas-body, .offcanvas-header {
+  background-color: rgb(255, 255, 255,1);
 }
 
-.navbar-seccion-menu li {
-  color: var(--color-blanco);
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  margin-right: 1.5rem;
-} */
 
-
-/* .navbar-toggler{
-  border: none !important;
-} */
-
-/* .navbar-secciones-item {
-  text-decoration: none;
-  list-style: none;
+.modal-backdrop {
+  background-color: transparent;
+  opacity: 0!important;
 }
 
-.header-seccion a {
- color: var(--color-blanco);
- font-size: 2rem;
-}
+@media (width>1250px) {
+ :root {
+  font-size: 8px;
+ }
 
-.container-fluid {
-  display: none;
-}
+} 
+  
 
-.header-logo {
-  text-decoration: none;
-}
+@media (min-width: 768px) {
+  .offcanvas-body{
+    background-color: transparent;
+  }
 
-.header-logo a:hover{
-  color: var(--color-blanco)!important;
+  .nav-link {
+    color: var(--color-blanco)!important;
+  }
 }
-
-.header-logo {
-  color: red;
-} */
