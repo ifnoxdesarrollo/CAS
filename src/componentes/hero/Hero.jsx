@@ -1,5 +1,7 @@
 import React, { Component, useEffect, useState } from 'react'
 import './Hero.css'
+import '../prevencion/PrevencionItem.css'
+import HeroModal from './HeroModal';
 
 class Hero extends Component {
 
@@ -36,7 +38,8 @@ class Hero extends Component {
 
     let content;
     let content2;
-    let content3;
+    let hayAtencionWsp = false;
+    let hayAtencion0800 = false;
 
     const fecha = new Date();
     const fechaFormateada = formatearFecha(currentTime);
@@ -50,7 +53,6 @@ class Hero extends Component {
 
     const toggleModal = () => {
       modal = !modal;
-      console.log(modal)
     }
 
 
@@ -72,26 +74,52 @@ class Hero extends Component {
 
     if (dayOfWeek === 1 && currentHour > 16 && currentHour < 19) {
       content = "https://wa.me/+5492615570314";
-    } else if (dayOfWeek === 1 && currentHour > 18 && currentHour < 21) {
-      content = "https://wa.me/+5492616058614";
-    } else if (dayOfWeek === 2 && currentHour > 16 && currentHour < 19) {
-      content = "https://wa.me/+5492615570314"
-    } else if (dayOfWeek === 3 && currentHour > 15 && currentHour < 20) {
-      content = "https://wa.me/+5492615570314"
-    } else if (dayOfWeek === 4 && currentHour > 14 && currentHour < 19) {
-      content = "https://wa.me/+5492615570314"
-    } else if (dayOfWeek === 5 && currentHour > 17 && currentHour < 20) {
-      content = "https://wa.me/+5492615570314"
-    } else if (dayOfWeek === 6 && currentHour > 17 && currentHour < 21) {
-      content = "https://wa.me/+5492615570314"
-    } else if (dayOfWeek === 0 && currentHour > 17 && currentHour < 21) {
-      content = "https://wa.me/+5492622540949"
-    } else {
-      content = toggleModal;
-    }
-
-    if (dayOfWeek == 0 || dayOfWeek === 6 || fechaFormateada == feriadoFormateado1 || fechaFormateada == feriadoFormateado2 || fechaFormateada == feriadoFormateado3 || fechaFormateada == feriadoFormateado4 || fechaFormateada == feriadoFormateado5) {
       content2 = "tel:08008000135";
+      hayAtencionWsp = true;
+      hayAtencion0800 = true;
+    } else if (dayOfWeek === 2 && currentHour > 18 && currentHour < 21) {
+      content2 = "tel:08008000135";
+      content = "https://wa.me/+5492615570314";
+      hayAtencionWsp = true;
+      hayAtencion0800 = true;
+    } else if (dayOfWeek === 3 && currentHour > 18 && currentHour < 19) {
+      content = "https://wa.me/+5492615570314";
+      content2 = "tel:08008000135";
+      hayAtencionWsp = true;
+      hayAtencion0800 = true;
+    } else if (dayOfWeek === 4 && currentHour > 16 && currentHour < 19) {
+      content = "https://wa.me/+5492615570314";
+      content2 = "tel:08008000135";
+      hayAtencionWsp = true;
+      hayAtencion0800 = true;
+    } else if (dayOfWeek === 5 && currentHour > 16 && currentHour < 17) {
+      content = "https://wa.me/+5492615570314"
+      content2 = "tel:08008000135";
+      hayAtencionWsp = true;
+      hayAtencion0800 = true;
+    } else if (dayOfWeek === 6 && currentHour > 19 && currentHour < 21) {
+      content = "https://wa.me/+5492615570314";
+      content2 = "tel:08008000135";
+      hayAtencionWsp = true;
+      hayAtencion0800 = true;
+    } else if (dayOfWeek === 0 && currentHour > 19 && currentHour < 21) {
+      content = "https://wa.me/+5492622540949";
+      content2 = "";
+      hayAtencionWsp = true;
+      hayAtencion0800 = false;
+    } else if (fechaFormateada == feriadoFormateado1 ||
+      fechaFormateada == feriadoFormateado2 || fechaFormateada == feriadoFormateado3 ||
+      fechaFormateada == feriadoFormateado4 || fechaFormateada == feriadoFormateado5 &&
+      (currentHour > 19 && currentHour < 21)) {
+      content2 = "";
+      content = "https://wa.me/+5492622540949";
+      hayAtencionWsp = true;
+      hayAtencion0800 = false;
+    } else {
+      content = "";
+      content2 = "";
+      hayAtencionWsp = false;
+      hayAtencion0800 = false;
     }
 
 
@@ -108,14 +136,7 @@ class Hero extends Component {
           <div className="hero__contenedor__botones">
             <h3 className='hero__contenedor__botones__titulo-1'>Organización sin Fines de Lucro</h3>
             <h3 className='hero__contenedor__botones__titulo-1'>Atención únicamente telefónica</h3>
-            <div className="contenedor__botones">
-              <a href={content2}>
-                <button className='hero__contenedor__botones__boton-2'>Llamar 0800</button>
-              </a>
-              <a href={content} onClick={content}>
-                <button className='hero__contenedor__botones__boton-1' >Llamar por Whatsapp</button>
-              </a>
-            </div>
+            <HeroModal content={content} content2={content2} hayAtencion0800={hayAtencion0800} hayAtencionWsp={hayAtencionWsp}></HeroModal>
             <h3 className='hero__contenedor__botones__titulo-2'>Llamadas con costo</h3>
           </div>
         </div>

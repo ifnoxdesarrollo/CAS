@@ -115,6 +115,89 @@ button.hero__contenedor__botones__boton-2:hover {
   margin-top: 0.5rem;
 }
 
+.modal-activo {
+  display: block;
+}
+
+.popup,
+.overlay {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  display: grid;
+  place-items: center;
+}
+
+.popup {
+  z-index: 1;
+}
+
+.overlay {
+  background: var(--color-gris-oscuro);
+}
+
+
+.modal-cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 1rem;
+
+}
+
+.modal-caja-contenido {
+
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #f1f1f1;
+  border-radius: 1.5rem;
+}
+
+.modal-contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  padding: 2rem;
+  /* width: 100%; */
+  max-width: 46.75;
+  height: 96%;
+  overflow-y: scroll;
+}
+
+.modal-titulo {
+  font-family: var(--tipografia-ppal) !important;
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: var(--color-amarillo);
+  margin-bottom: 1.75rem;
+}
+
+.modal-imagen {
+  max-width: 46.75rem;
+  margin-bottom: 1rem;
+  size: auto;
+}
+
+.modal-parrafo {
+  width: 100%;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  text-align: left;
+  color: var(--color-gris-oscuro);
+
+}
+
 @media(width <=1000px) {
 
   .hero__contenedor {
