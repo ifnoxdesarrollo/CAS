@@ -25,6 +25,14 @@
   font-family: var(--tipografia-ppal);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+div[id] {
+  scroll-margin-top: 25px;
+}
+
 .titulo-h2 {
   font-size: 3rem;
   font-weight: bold;

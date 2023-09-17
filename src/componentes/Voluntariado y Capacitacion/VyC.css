@@ -77,38 +77,18 @@
 .boton--gris--claro {
   width: 300px;
   height: 3rem;
-  box-shadow: none;
+  box-shadow: none!important;
   display: block;
-  background-color: var(--color-gris-claro) !important;
+  background-color: rgb(151, 150, 150) !important;
   color: var(--color-gris-oscuro)!important;
   font-size: 1rem !important;
-  border: 2px solid var(--color-gris-oscuro)!important;
+  border: 2px solid var(--color-gris-claro)!important;
   border-radius: .5rem;
   width: 300px !important;
   font-size: 1rem !important;
   cursor: not-allowed !important;
 
 }
-
-/*
-
-
-.boton-blanco{
-  font-size: 1rem !important;
-  border: 2px solid !important;
-  background-color: #FFFFFF !important;
-  border-color: #F79D01 !important;
-  color: #F79D01 !important;
-  border-radius: .5rem;
-  /* margin: auto; */
-  /* width: 300px !important;
-  height: 48px !important; */
-  /* margin: 0px 37px 28px 38px !important; 
-
-} */
-
-
-
 
 
 
