@@ -76,37 +76,37 @@ class Hero extends Component {
       return `${año}-${mes}-${dia}`;
     }
 
-    if (dayOfWeek === 1 && currentHour > 16 && currentHour < 19) {
+    if (dayOfWeek === 1 && currentHour > 14 && currentHour < 19) {
       content = "https://wa.me/+5492615570314";
       content2 = "tel:08008000135";
       hayAtencionWsp = true;
       hayAtencion0800 = true;
-    } else if (dayOfWeek === 2 && currentHour > 18 && currentHour < 21) {
+    } else if (dayOfWeek === 2 && currentHour > 16 && currentHour < 21) {
       content2 = "tel:08008000135";
       content = "https://wa.me/+5492615570314";
       hayAtencionWsp = true;
       hayAtencion0800 = true;
-    } else if (dayOfWeek === 3 && currentHour > 18 && currentHour < 19) {
+    } else if (dayOfWeek === 3 && currentHour > 16 && currentHour < 19) {
       content = "https://wa.me/+5492615570314";
       content2 = "tel:08008000135";
       hayAtencionWsp = true;
       hayAtencion0800 = true;
-    } else if (dayOfWeek === 4 && currentHour > 16 && currentHour < 19) {
+    } else if (dayOfWeek === 4 && currentHour > 14 && currentHour < 19) {
       content = "https://wa.me/+5492615570314";
       content2 = "tel:08008000135";
       hayAtencionWsp = true;
       hayAtencion0800 = true;
-    } else if (dayOfWeek === 5 && currentHour > 16 && currentHour < 17) {
+    } else if (dayOfWeek === 5 && currentHour > 14 && currentHour < 17) {
       content = "https://wa.me/+5492615570314"
       content2 = "tel:08008000135";
       hayAtencionWsp = true;
       hayAtencion0800 = true;
-    } else if (dayOfWeek === 6 && currentHour > 19 && currentHour < 21) {
+    } else if (dayOfWeek === 6 && currentHour > 17 && currentHour < 21) {
       content = "https://wa.me/+5492615570314";
       content2 = "tel:08008000135";
       hayAtencionWsp = true;
       hayAtencion0800 = true;
-    } else if (dayOfWeek === 0 && currentHour > 19 && currentHour < 21) {
+    } else if (dayOfWeek === 0 && currentHour > 17 && currentHour < 21) {
       content = "https://wa.me/+5492622540949";
       content2 = "";
       hayAtencionWsp = true;
@@ -114,7 +114,7 @@ class Hero extends Component {
     } else if (fechaFormateada == feriadoFormateado1 ||
       fechaFormateada == feriadoFormateado2 || fechaFormateada == feriadoFormateado3 ||
       fechaFormateada == feriadoFormateado4 || fechaFormateada == feriadoFormateado5 &&
-      (currentHour > 19 && currentHour < 21)) {
+      (currentHour > 17 && currentHour < 21)) {
       content2 = "";
       content = "https://wa.me/+5492622540949";
       hayAtencionWsp = true;
@@ -157,13 +157,11 @@ class Hero extends Component {
             <h3 className='hero__contenedor__botones__titulo-1'>Organización sin Fines de Lucro</h3>
             <h3 className='hero__contenedor__botones__titulo-1'>Atención únicamente telefónica</h3>
             <div className="contenedor__botones">
-              {/* <a href={props.content2}> */}
-              <a href="">
-                <button className='hero__contenedor__botones__boton-2' onClick={() => prueba()}>Llamar 0800</button>
+              <a href={content2}>
+                <button className='hero__contenedor__botones__boton-2' >Llamar 0800</button>
               </a>
-              {/* <a href={props.content}> */}
-              <a>
-                <button className="hero__contenedor__botones__boton-1" onClick={() => prueba()} >Llamar por Whatsapp</button>
+              <a href={content}>
+                <button className="hero__contenedor__botones__boton-1" >Llamar por Whatsapp</button>
               </a>
             </div>
 
