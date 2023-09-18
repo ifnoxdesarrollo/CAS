@@ -170,7 +170,7 @@ button.hero__contenedor__botones__boton-2:hover {
   line-height: 1.4;
   padding: 2rem;
   /* width: 100%; */
-  max-width: 46.75;
+  max-width: 46.75rem;
   height: 96%;
   overflow-y: scroll;
 }
@@ -201,6 +201,26 @@ button.hero__contenedor__botones__boton-2:hover {
 .div-modales {
   background-color: red;
   display: block;
+}
+
+.llamados {
+  font-size: 1.4rem !important;
+}
+
+.modal-caja-contenido-llamados {
+  width: 50% !important;
+  height: 50% !important;
+  width: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.modal-contenido-llamados {
+  width: 80% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 @media(width <=1000px) {
@@ -235,6 +255,21 @@ button.hero__contenedor__botones__boton-2:hover {
     height: 3rem !important;
     font-size: 1rem !important;
   }
+
+
+  .llamados {
+    font-size: 1.4rem !important;
+  }
+
+  .modal-caja-contenido-llamados {
+    width: 50% !important;
+    height: 50% !important;
+  }
+
+  .modal-contenido-llamados {
+    width: 96%;
+    top: 50%;
+  }
 }
 
 @media(width <=630px) {
@@ -249,6 +284,21 @@ button.hero__contenedor__botones__boton-2:hover {
     width: 14rem !important;
     height: 3rem !important;
     font-size: 1rem !important;
+  }
+
+
+  .llamados {
+    font-size: 1.4rem !important;
+  }
+
+  .modal-caja-contenido-llamados {
+    width: 50% !important;
+    height: 50% !important;
+  }
+
+  .modal-contenido-llamados {
+    width: 96%;
+    top: 50%;
   }
 }
 
@@ -339,5 +389,19 @@ button.hero__contenedor__botones__boton-2:hover {
   .hero__contenedor {
     width: 18.75rem;
     height: 103%;
+  }
+
+  .llamados {
+    font-size: 1.4rem !important;
+  }
+
+  .modal-caja-contenido-llamados {
+    width: 50% !important;
+    height: 50% !important;
+  }
+
+  .modal-contenido-llamados {
+    width: 96%;
+    top: 50%;
   }
 }

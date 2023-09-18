@@ -43,8 +43,8 @@ class Hero extends Component {
     const { currentTime } = this.state;
     const currentHour = currentTime.getHours();
 
-    let content = "";
-    let content2 = "";
+    let content = "#";
+    let content2 = "#";
     let hayAtencionWsp = true;
     let hayAtencion0800 = false;
 
@@ -78,12 +78,10 @@ class Hero extends Component {
     }
 
     if (dayOfWeek === 1 && currentHour > 14 && currentHour < 19) {
-      // content = "https://wa.me/+5492615570314";
-      // content2 = "tel:08008000135";
-      content = "#";
-      content2 = "#";
-      hayAtencionWsp = false;
-      hayAtencion0800 = false;
+      content2 = "tel:08008000135";
+      content = "https://wa.me/+5492615570314";
+      hayAtencionWsp = true;
+      hayAtencion0800 = true;
     } else if (dayOfWeek === 2 && currentHour > 16 && currentHour < 21) {
       content2 = "tel:08008000135";
       content = "https://wa.me/+5492615570314";
@@ -111,14 +109,14 @@ class Hero extends Component {
       hayAtencion0800 = true;
     } else if (dayOfWeek === 0 && currentHour > 17 && currentHour < 21) {
       content = "https://wa.me/+5492622540949";
-      content2 = "";
+      content2 = "#";
       hayAtencionWsp = true;
       hayAtencion0800 = false;
     } else if (fechaFormateada == feriadoFormateado1 ||
       fechaFormateada == feriadoFormateado2 || fechaFormateada == feriadoFormateado3 ||
       fechaFormateada == feriadoFormateado4 || fechaFormateada == feriadoFormateado5 &&
       (currentHour > 17 && currentHour < 21)) {
-      content2 = "";
+      content2 = "#";
       content = "https://wa.me/+5492622540949";
       hayAtencionWsp = true;
       hayAtencion0800 = false;
