@@ -1,0 +1,131 @@
+body.modal-activo {
+    overflow-y: hidden;
+  }
+  
+  .tarjeta {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 1px rgba(112, 112, 112, 1);
+    border-radius: 10px;
+    width: 440px;
+    height: 500px;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .titulo-h2-prev {
+    color: var(--color-rojo);
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: 2rem !important;
+    font-weight: bold;
+  }
+  
+  .prevencion-img {
+    width: 390px;
+    height: auto;
+    /* margin: 20px 19px; */
+    /* margin: 0.5rem; */
+    object-fit: cover;
+  }
+  
+  .titulo-imagen {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-gris-oscuro);
+  }
+  
+  .parrafo-imagen {
+    color: var(--color-gris-claro);
+    font-size: 1.25rem;
+    padding: 0;
+    /* background-color: aquamarine; */
+    text-align: center;
+  }
+  
+  .br-prevencion {
+    display: block;
+  }
+  
+  /*--------------- Estilos del modal --------------*/
+  
+  .popup,
+  .overlay {
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: grid;
+    place-items: center;
+  }
+  
+  .popup {
+    z-index: 1;
+  }
+  
+  .overlay {
+    background: var(--color-gris-oscuro);
+  }
+  
+  .modal-cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 1rem;
+  
+  }
+  
+  .modal-caja-contenido {
+  
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #f1f1f1;
+    border-radius: 1.5rem;
+  }
+  
+  .modal-contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    padding: 2rem;
+    /* width: 100%; */
+    max-width: 46.75;
+    height: 96%;
+    overflow-y: scroll;
+  }
+  
+  .modal-titulo {
+    font-family: var(--tipografia-ppal) !important;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: var(--color-amarillo);
+    margin-bottom: 1.75rem;
+  }
+  
+  .modal-imagen {
+    max-width: 46.75rem;
+    margin-bottom: 1rem;
+    size: auto;
+  }
+  
+  .modal-parrafo {
+    width: 100%;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    text-align: left;
+    color: var(--color-gris-oscuro);
+  
+  }

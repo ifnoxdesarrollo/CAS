@@ -1,53 +1,78 @@
-import React, {useState} from 'react'
-import './Encabezado.css'
+import React, { useState } from "react";
+import "./Encabezado.css";
 
 function Encabezado() {
-
-  const [colorNav, setColorNav] = useState (false);
+  const [colorNav, setColorNav] = useState(false);
   const changeColorNav = () => {
     if (window.scrollY >= 780) {
-      setColorNav (true)
+      setColorNav(true);
     } else {
-      setColorNav (false)
+      setColorNav(false);
     }
+  };
+  window.addEventListener("scroll", changeColorNav);
+
+  function menuAbrir () {
+    const [abrirMenu, setAbrirMenu] = useState (false);
+    
   }
-  window.addEventListener('scroll', changeColorNav)
-
-
 
   return (
     <>
-      <header id='Header' className={colorNav ? 'header-seccion header-seccion-scroll' : 'header-seccion'}>
-                  <nav class="navbar navbar-expand-md navbar-color">
-                    <div class="container-fluid">
-                          <a class="navbar-brand" href="#">CAS Mza</a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                              <div class="offcanvas-header">
-                                <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                              </div>
-                              <div class="offcanvas-body">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                  <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Historia del CAS</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#Faqs">Preguntas frecuentes</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#Voluntariado">Voluntariado</a>
-                                  </li>
-                                  
-                                </ul>
-                              </div>
-                          </div>
-                    </div>
-                </nav>
+      <header
+        id="Header"
+        className={
+          colorNav ? "header-seccion header-seccion-scroll" : "header-seccion"
+        }
+      >
+        <nav className="navbar-seccion">
+          <a href="#" className="logo">
+            CAS Mza
+          </a>
+          <button className="open-menu" aria-label="Abrir menú">
+              <svg
+                className="menu-hamb"
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+          </button>
+          <ul className="menu">
+            <button className="close-menu" aria-label="Cerrar menú">
+              <svg
+                className="cerrar-icono"
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="45"
+                fill="currentColor"
+                class="bi bi-x"
+                viewBox="0 0 16 16"
+              >
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+            </button>
+            <li>
+              <a href="">Historia del CAS</a>
+            </li>
+            <li>
+              <a href="#Faqs">Preguntas frecuentes</a>
+            </li>
+            <li>
+              <a href="#Voluntariado">Voluntariado</a>
+            </li>
+          </ul>
+        </nav>
       </header>
     </>
-  )
+  );
 }
 
-export default Encabezado
+export default Encabezado;
