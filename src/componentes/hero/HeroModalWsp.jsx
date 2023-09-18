@@ -2,35 +2,30 @@ import React, { useState } from 'react'
 import './Hero.css'
 
 function HeroModalWsp(props) {
+    const [modal, setModal] = useState(false);
 
-    const [modal, setModal] = useState(true);
+    const dispararModal = () => {
+        setModal(!modal);
+    }
 
-    // const toggleModal1 = () => {
-    //     if (props.hayAtencion0800 == false) {
-    //         setModal(!modal);
-    //         console.log(modal)
-    //     }
-    // };
-
-    // const toggleModal2 = () => {
-    //     if (props.hayAtencionWsp == false) {
-    //         setModal(!modal);
-    //     }
-    // };
-
-    // if (modal) {
-    //     document.body.classList.add('modal-activo')
-    // } else {
-    //     document.body.classList.remove('modal-activo')
-    // }
-
-    // const cierre = () => {
-    //     setModal(!modal);
-    // }
 
     return (
         <>
-            {props.hayAtencionWsp == true && props.hayAtencion0800 == false ?
+            {props.hayAtencionWsp == true && props.hayAtencion0800 == false ? <>
+                <div className="contenedor__botones">
+                    <a href={props.content2}>
+                        <button className='hero__contenedor__botones__boton-2' onClick={() => dispararModal()}>Llamar 0800</button>
+                    </a>
+                    <a href={props.content}>
+                        <button className="hero__contenedor__botones__boton-1" onClick={() => dispararModal()}>Llamar por Whatsapp</button>
+                    </a>
+                </div> </>
+                :
+                <></>
+            }
+
+
+            {modal &&
                 <>
                     <div className='popup'>
                         <div className='modal-caja-contenido'>
@@ -43,9 +38,8 @@ function HeroModalWsp(props) {
                         </div>
                     </div>
                 </>
-                :
-                <></>
-                }
+
+            }
         </>
     )
 }

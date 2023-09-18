@@ -4,6 +4,7 @@ import '../prevencion/PrevencionItem.css'
 import HeroModalNN from './HeroModalNN';
 import HeroModalWsp from './HeroModalWsp';
 import HeroModal0800 from './HeroModal0800';
+import Botones from './Botones';
 
 
 
@@ -79,8 +80,8 @@ class Hero extends Component {
     if (dayOfWeek === 1 && currentHour > 14 && currentHour < 19) {
       // content = "https://wa.me/+5492615570314";
       // content2 = "tel:08008000135";
-      content = "";
-      content2 = "";
+      content = "#";
+      content2 = "#";
       hayAtencionWsp = false;
       hayAtencion0800 = false;
     } else if (dayOfWeek === 2 && currentHour > 16 && currentHour < 21) {
@@ -122,25 +123,15 @@ class Hero extends Component {
       hayAtencionWsp = true;
       hayAtencion0800 = false;
     } else {
-      content = "";
-      content2 = "";
+      content = "#";
+      content2 = "#";
       hayAtencionWsp = false;
       hayAtencion0800 = false;
     }
 
-    const dispararModal = () => {
+    let modal2;
 
-      if (hayAtencion0800 === false && hayAtencionWsp === false) {
-        console.log(hayAtencion0800);
-        return <HeroModalNN hayAtencion0800={hayAtencion0800} hayAtencionWsp={hayAtencionWsp}></HeroModalNN>
-      } else if (hayAtencion0800 === false && hayAtencionWsp === true) {
-        return <HeroModalWsp hayAtencion0800={hayAtencion0800} hayAtencionWsp={hayAtencionWsp}></HeroModalWsp>
-      } else if (hayAtencion0800 === true && hayAtencionWsp === false) {
-        return <HeroModal0800 hayAtencion0800={hayAtencion0800} hayAtencionWsp={hayAtencionWsp}></HeroModal0800>
-      } else {
-        return "";
-      }
-    }
+
 
 
     const hero =
@@ -156,30 +147,16 @@ class Hero extends Component {
           <div className="hero__contenedor__botones">
             <h3 className='hero__contenedor__botones__titulo-1'>Organización sin Fines de Lucro</h3>
             <h3 className='hero__contenedor__botones__titulo-1'>Atención únicamente telefónica</h3>
-            <div className="contenedor__botones">
-              <a href={content2}>
-                <button className='hero__contenedor__botones__boton-2' onClick={() => dispararModal()}>Llamar 0800</button>
-              </a>
-              <a href={content}>
-                <button className="hero__contenedor__botones__boton-1" onClick={() => dispararModal()}>Llamar por Whatsapp</button>
-              </a>
-            </div>
+
+            <Botones content={content} content2={content2} hayAtencion0800={hayAtencion0800} hayAtencionWsp={hayAtencionWsp}></Botones>
+            <HeroModalNN content={content} content2={content2} hayAtencion0800={hayAtencion0800} hayAtencionWsp={hayAtencionWsp}></HeroModalNN>
+            <HeroModalWsp content={content} content2={content2} hayAtencion0800={hayAtencion0800} hayAtencionWsp={hayAtencionWsp}></HeroModalWsp>
+            <HeroModal0800 content={content} content2={content2} hayAtencion0800={hayAtencion0800} hayAtencionWsp={hayAtencionWsp}></HeroModal0800>
 
             <h3 className='hero__contenedor__botones__titulo-2'>Llamadas con costo</h3>
 
           </div>
 
-          {/* {this.state.modal && (
-            <div className="div-modales">
-              {hayAtencion0800 === false && hayAtencionWsp === false ? (
-                <HeroModalNN modal={this.state.modal}></HeroModalNN>
-              ) : hayAtencion0800 === false && hayAtencionWsp === true ? (
-                <HeroModalWsp modal={this.state.modal}></HeroModalWsp>
-              ) : hayAtencion0800 === true && hayAtencionWsp === false ? (
-                <HeroModal0800 modal={this.state.modal}></HeroModal0800>
-              ) : null}
-            </div>
-          )} */}
         </div>
       </div >
 

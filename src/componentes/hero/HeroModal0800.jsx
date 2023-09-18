@@ -3,11 +3,29 @@ import './Hero.css'
 
 function HeroModal0800(props) {
 
-    // const [modal, setModal] = useState(false);
+    const [modal, setModal] = useState(false);
+    const dispararModal = () => {
+        setModal(!modal);
+    }
+
 
     return (
         <>
-            {props.hayAtencionWsp == false && props.hayAtencion0800 == true ?
+
+            {props.hayAtencionWsp == false && props.hayAtencion0800 == true ? <>
+                <div className="contenedor__botones">
+                    <a href={props.content2}>
+                        <button className='hero__contenedor__botones__boton-2' onClick={() => dispararModal()}>Llamar 0800</button>
+                    </a>
+                    <a href={props.content}>
+                        <button className="hero__contenedor__botones__boton-1" onClick={() => dispararModal()}>Llamar por Whatsapp</button>
+                    </a>
+                </div> </>
+                :
+                <></>
+            }
+
+            {modal &&
                 <>
                     <div className='popup'>
                         <div className='modal-caja-contenido'>
@@ -20,8 +38,6 @@ function HeroModal0800(props) {
                         </div>
                     </div>
                 </>
-                :
-                <></>
             }
         </>
     )
