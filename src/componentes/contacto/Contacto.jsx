@@ -9,7 +9,7 @@ function Contacto() {
           CAS
         </h2>
         <p className='text-center parrafo-contacto'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Si necesitás más información, podés contactarnos a través de nuestras redes sociales.
         </p>
         <div className="iconos">
           <a href="https://www.instagram.com/cas.mendoza.1" target='_blank'>
