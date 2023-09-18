@@ -22,7 +22,7 @@ function PrevencionItem() {
         <h3 className='titulo-imagen'>Unidos por la vida:</h3>
         <p className='parrafo-imagen'>Prevención del suicidio y construcción de la
           <br className='br-prevencion' /> esperanza</p>
-        <button className='btn btn-lg boton-prev boton--rojo' onClick={toggleModal}>Leer más</button>
+        <button className='boton boton-prev boton--rojo' onClick={toggleModal}>Leer más</button>
       </div>
 
       {modal && (<div className='popup'>

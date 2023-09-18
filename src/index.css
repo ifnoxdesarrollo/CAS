@@ -40,7 +40,7 @@ div[id] {
 }
 
 .boton {
-  width: 24.25rem ;
+  width: 24,25rem;
   height: 3rem !important;
   box-shadow: none !important;
   display: block;
@@ -67,6 +67,8 @@ div[id] {
 .boton--rojo {
   background-color: var(--color-rojo) !important;
   color: white !important;
+  border-radius: .5rem;
+  border: none;
 }
 
 .boton--verde {

@@ -17,7 +17,7 @@
 
 .hero__contenedor {
   width: 860px;
-  max-width: 1400px;
+  max-width: 1200px;
   height: 80%;
   display: flex;
   flex-direction: column;
@@ -117,40 +117,105 @@ button.hero__contenedor__botones__boton-2:hover {
   margin-top: 1.5rem;
 }
 
-@media (max-width:415px){
+/* ------------  medias queries --------------- */
+
+@media (width<=900px) {
   .hero { 
-    background-image: url('../../../imagenes/hero_mobile.jpg');
-    height: 50.75rem;
-  }
-  .hero__contenedor__encabezado {
-    width: 100%;
-    height: 78% !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: start;
-  
-    /* background-color: lightgrey; */
-  }
-  .hero__contenedor__encabezado__titulo-1 {
-    color: var(--color-amarillo)!important;
-    font-size: 2.5rem;
-    text-align: start;
-    font-weight: 800;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-turquesa);
+    background-image: url('../../../imagenes/celular-llamando-CAS.png');
+    background-size: auto;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
     
   }
+  
+  .hero__contenedor {
+    width: 660px;
+    max-width: 1200px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin-top: 3rem;
+  
+    /* background-color: rgba(220, 220, 220, 0.6); */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (width<=700px) {}
+@media (width<=600px) {}
+
+
+@media (width<=480px) {
+  .hero { 
+    max-width: 480px!important;
+    height: 100vmax!important;
+    background-image: url('../../../imagenes/celular-llamando-CAS_mobile.png');
+    /* height: 500px; */
+    background-size:cover;
+    /* background-position: center;
+    background-repeat: no-repeat; */
+    display: grid;
+    align-items: center;
+  }
+  .hero__contenedor {
+    width: 100%!important;
+    height: 90vmax!important;
+    /* max-height: 80%!important; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+
+    /* background-color: red; */
+  }
+
+  .hero__contenedor__encabezado {
+    width: 80%;
+    height: 300px!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* margin-bottom: 4rem; */
+  
+    /* background-color: rgb(179, 100, 100); */
+  }
+
+  .hero__contenedor__encabezado__titulo-1 {
+    font-size: 40px!important;
+    text-align: start;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
   .hero__contenedor__encabezado__titulo-2 {
-    font-size: 1rem;
-    color: var(--color-amarillo)!important;
-    margin-bottom: 14rem;
-    font-weight: 600;
+    font-size: 23px!important;
   }
-  .hero__contenedor__encabezado__titulo-3 {
-    font-size: 1rem !important;
-    color: var(--color-blanco)!important;
-    margin-top: 1.25rem;
-    margin-bottom: 4rem;
+
+  .hero__contenedor__botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 90%;
+    /* background-color: lightcoral; */
   }
+
   .hero__contenedor__botones__titulo-1 {
     font-size: 1rem !important;
     color: var(--color-blanco);
@@ -162,9 +227,11 @@ button.hero__contenedor__botones__boton-2:hover {
     width: 100%;
     height: 25px;
     margin-top: 0rem;
+    text-align: left!important;
   }
+
   .hero__contenedor__botones__boton-1 {
-    width: 18.75rem !important;
+    width: 300px !important;
     height: 3rem !important;
     border-radius: 10px !important;
     margin: 0px 0px 12px 0px !important;
@@ -175,14 +242,21 @@ button.hero__contenedor__botones__boton-2:hover {
   }
   
   .hero__contenedor__botones__boton-2 {
-    width: 18.75rem !important;
+    width: 300px !important;
     height: 3rem !important;
     border-radius: 10px !important;
     background-color: var(--color-verde-claro)!important;
     font-size: 1rem !important;
     color: #FCFCFC !important;
     border: none !important;
+    margin-bottom: 15px;
   }
+}
+
+
+@media (max-width:415px){
+  
+
 
   .contenedor__botones {
     display: flex;
@@ -199,3 +273,5 @@ button.hero__contenedor__botones__boton-2:hover {
     height: 100%;
   }
 }
+
+@media (width<=3750px) {}

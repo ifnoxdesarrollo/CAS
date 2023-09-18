@@ -50,6 +50,11 @@ body.modal-activo {
   display: block;
 }
 
+
+.boton--rojo:hover {
+  background-color: rgb(186, 40, 111);
+}
+
 /*--------------- Estilos del modal --------------*/
 
 .popup,
