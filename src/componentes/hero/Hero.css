@@ -145,20 +145,6 @@ button.hero__contenedor__botones__boton-2:hover {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-@media (width<=700px) {}
-@media (width<=600px) {}
-
-
 @media (width<=480px) {
   .hero { 
     max-width: 480px!important;
@@ -209,11 +195,17 @@ button.hero__contenedor__botones__boton-2:hover {
 
   .hero__contenedor__botones {
     display: flex;
-    flex-direction: column;
+    flex-direction: column!important;
     justify-content: center;
     align-items: left;
     width: 90%;
     /* background-color: lightcoral; */
+  }
+
+  .contenedor__botones {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   }
 
   .hero__contenedor__botones__titulo-1 {
@@ -252,26 +244,3 @@ button.hero__contenedor__botones__boton-2:hover {
     margin-bottom: 15px;
   }
 }
-
-
-@media (max-width:415px){
-  
-
-
-  .contenedor__botones {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-
-  .hero__contenedor__botones {
-    margin-top: 0rem;
-  }
-
-  .hero__contenedor {
-    width: 18.75rem;
-    height: 100%;
-  }
-}
-
-@media (width<=3750px) {}
