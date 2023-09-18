@@ -1,69 +1,110 @@
 .header-seccion {
   width: 100%;
-  
-  height: 8vh;
-  position: fixed;
-  overflow: hidden;
-  z-index: 1111;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  height: 60px;
   background-color: rgba(255, 255, 255, 0.2);
-
   font-family: var(--tipografia-ppal);
+  margin: 0;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.navbar {
-  max-width: 1250px;
-  /* margin: 0 auto;
-  width: 85%; */
-  /* background-color: azure; */
-}
 
 .header-seccion-scroll {
   background-color: var(--color-rojo-transp);
   transition: .7s linear;
 }
 
-.navbar-color {
-  width: 100%;
-  background-color: transparent;
+.navbar-seccion {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
-.navbar-brand {
-  color: var(--color-blanco)!important;
+.navbar-seccion ul {
+  margin-bottom: 0;
 }
 
-.nav-link{
-  font-family: var(--tipografia-ppal)!important;
-  font-size: 24px!important;
-  color: var(--color-gris-oscuro)!important;
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.offcanvas-body, .offcanvas-header {
-  background-color: rgb(255, 255, 255,1);
+.menu li {
+  font-family: var(--tipografia-ppal);
+  font-size: 18px;
+  margin: 0 15px;
+  line-height: 40px;
+  font-weight: bold;
 }
 
-
-.modal-backdrop {
-  background-color: transparent;
-  opacity: 0!important;
+.menu a, .logo {
+  text-decoration: none;
+  color: var(--color-blanco);
+  line-height: 0;
 }
 
-@media (width>1250px) {
- :root {
-  font-size: 8px;
- }
+.logo {
+  font-size: 22px;
+}
 
-} 
-  
+.open-menu, .close-menu {
+  display: none;
+}
 
-@media (min-width: 768px) {
-  .offcanvas-body{
-    background-color: transparent;
+@media (max-width: 900px) {
+
+  .logo { 
+    color: var(--color-gris-oscuro);
+  }
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--color-blanco);
+    overflow-y: auto;
+    /* padding-top: 15%; */
+
+    opacity: 0;
+    pointer-events: none;
   }
 
-  .nav-link {
-    color: var(--color-blanco)!important;
+  .menu li a {
+      color: var(--color-gris-oscuro);
+      line-height: 60px;
+      
+  }
+
+  .open-menu, .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .close-menu svg {
+    color: var(--color-gris-oscuro);
+
+  }
+
+  .close-menu {
+    align-self: flex-end;
+  }
+
+  .menu_abierto {
+    opacity: 1;
+    pointer-events: all;
   }
 }
