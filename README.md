@@ -1,8 +1,6 @@
-# React + Vite
+# CAS Mendoza
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Página web desarrollada para organización sin fines de lucro con el objetivo de promover la prevención del suicidio, así como la asistencia para personas en situación de crisis.
 
-Currently, two official plugins are available:
+- [Visitá el sitio web](https://cas-mendoza.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
