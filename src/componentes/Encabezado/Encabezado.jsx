@@ -27,7 +27,7 @@ function Encabezado() {
       >
         <nav className="navbar-seccion">
           <a href="#" className="logo">
-            CAS Mza
+            CAS Mendoza
           </a>
           <button className="open-menu" aria-label="Abrir menú">
               <svg
@@ -59,9 +59,9 @@ function Encabezado() {
                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
               </svg>
             </button>
-            <li>
+            {/* <li>
               <a href="">Historia del CAS</a>
-            </li>
+            </li> */}
             <li>
               <a href="#Faqs">Preguntas frecuentes</a>
             </li>
