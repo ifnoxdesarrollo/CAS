@@ -68,6 +68,9 @@ function Encabezado() {
             <li>
               <a href="#Voluntariado">Voluntariado</a>
             </li>
+            <li>
+              <a href="#contacto">Contacto</a>
+            </li>
           </ul>
         </nav>
       </header>

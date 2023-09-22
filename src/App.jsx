@@ -1,4 +1,5 @@
 import './App.css'
+import BotonScrollUp from './componentes/BotonScrollUp/BotonScrollUp'
 import Encabezado from './componentes/Encabezado/Encabezado'
 import VyC from './componentes/Voluntariado y Capacitacion/VyC'
 import Contacto from './componentes/contacto/Contacto'
@@ -18,6 +19,7 @@ function App() {
       <VyC></VyC>
       <Contacto></Contacto>
       <Footer></Footer>
+      <BotonScrollUp></BotonScrollUp>
     </>
   )
 }

@@ -14,7 +14,7 @@ function Footer() {
       </div>
       <div className="footer-contenedor-logo">
           <h4 className='footer-texto-inf'>Desarrollado por</h4>
-          <a href="https://www.futbolred.com/files/article_main/uploads/2023/08/15/64dc424a6c2af.jpeg"><img className='footer-logo' src='../../../imagenes/If_Nox-logo.svg' alt="Logo If Nox Desarrollo Web" /></a>
+          <a href="https://www.ifnox.com.ar/"><img className='footer-logo' src='../../../imagenes/If_Nox-logo.svg' alt="Logo If Nox Desarrollo Web" /></a>
       </div>
     </div>
   )
