@@ -1,0 +1,20 @@
+.nav {
+  background-color: rgba(163, 24, 91, 1) !important;
+}
+
+.links {
+  color: white !important;
+  font-size: 20px !important;
+}
+
+.marca {
+  font-size: 32px !important;
+  color: white !important;
+}
+
+.contenedor-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+
