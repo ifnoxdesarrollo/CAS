@@ -138,11 +138,7 @@
 @media (width <=600px) {
 
   .vyc-seccion{
-    height: 800px;
-  }
-
-  .vyc-seccion{
-    height: 800px;
+    height: 900px;
   }
 
   .parrafo {
@@ -221,5 +217,9 @@
   .parrafo {
     width: auto;
   }
-
+}
+@media(width <= 340px){
+  .vyc-seccion{
+    height: 1100px;
+  }
 }
