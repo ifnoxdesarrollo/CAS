@@ -148,7 +148,12 @@ class Hero extends Component {
       content2 = "tel:08008000135";
       hayAtencionWsp = true;
       hayAtencion0800 = true;
-    } else if (dayOfWeek === 12 && currentHour > 8 && currentHour < 19) {
+    } else if (dayOfWeek === 5 && currentHour > 12 && currentHour < 19) {
+      content = "https://wa.me/+5492615570314";
+      content2 = "tel:08008000135";
+      hayAtencionWsp = true;
+      hayAtencion0800 = true;
+    } else if (dayOfWeek === 6 && currentHour > 17 && currentHour < 21) {
       content = "https://wa.me/+5492615570314";
       content2 = "tel:08008000135";
       hayAtencionWsp = true;
